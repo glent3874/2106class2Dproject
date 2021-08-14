@@ -15,11 +15,11 @@ E:/github/class/2106class2Dproject/2106class2Dproject
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-54218
+51205
 Successfully changed project path to: E:/github/class/2106class2Dproject/2106class2Dproject
 E:/github/class/2106class2Dproject/2106class2Dproject
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 43.51 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 42.76 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.12f1 (b3b2c6512326)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.12f1/Editor/Data/Resources/UnitySubsystems
@@ -37,37 +37,37 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.12f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.12f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.12f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56988
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56296
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.12f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.000807 seconds.
+Registered in 0.001015 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 45.86 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 46.28 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.883 seconds
+- Completed reload, in  0.898 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.001805 seconds.
+Registered in 0.002013 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 51.52 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 48.92 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.159 seconds
+- Completed reload, in  1.156 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.02 seconds
-Refreshing native plugins compatible for Editor in 0.47 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.58 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 2080 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 92.9 MB.
+System memory in use before: 92.7 MB.
 System memory in use after: 92.8 MB.
 
-Unloading 33 unused Assets to reduce memory usage. Loaded Objects now: 2513.
-Total: 2.641772 ms (FindLiveObjects: 0.260809 ms CreateObjectMapping: 0.102014 ms MarkObjects: 2.130099 ms  DeleteObjects: 0.147567 ms)
+Unloading 28 unused Assets to reduce memory usage. Loaded Objects now: 2518.
+Total: 2.533302 ms (FindLiveObjects: 0.196967 ms CreateObjectMapping: 0.091747 ms MarkObjects: 2.156371 ms  DeleteObjects: 0.086935 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -81,70 +81,686 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/Scenes/SampleScene.unity
-  artifactKey: Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/SampleScene.unity using Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa27944bdea339c97c39027c7eea529c') in 0.016767 seconds 
-  Import took 0.020747 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 932.984453 seconds.
-  path: Assets/Scenes/menu.unity
-  artifactKey: Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/menu.unity using Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e99181a9d511b721e4549cf44f7854ee') in 0.007200 seconds 
-  Import took 0.011284 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 917.282948 seconds.
   path: Assets/Scenes
   artifactKey: Guid(fbe2af6d41bcbe348ad154f109f9ff54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes using Guid(fbe2af6d41bcbe348ad154f109f9ff54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a50074024384b6fc26fa2e08bcc8a2d') in 0.023014 seconds 
-  Import took 0.041901 seconds .
+Start importing Assets/Scenes using Guid(fbe2af6d41bcbe348ad154f109f9ff54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a50074024384b6fc26fa2e08bcc8a2d') in 0.003736 seconds 
+  Import took 0.007063 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 49.147504 seconds.
+  Time since last request: 0.000263 seconds.
   path: Assets/Scenes/menu.unity
   artifactKey: Guid(c5e65419cb9ab694dadc5a8c75673acf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/menu.unity using Guid(c5e65419cb9ab694dadc5a8c75673acf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39567aded0ede5f2f13e545fbd7064d9') in 0.001638 seconds 
-  Import took 0.014616 seconds .
+Start importing Assets/Scenes/menu.unity using Guid(c5e65419cb9ab694dadc5a8c75673acf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '108d661443f54b0732179dcc561b41ef') in 0.014359 seconds 
+  Import took 0.018779 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 7454.054964 seconds.
-  path: Assets/menu
-  artifactKey: Guid(6500f57a8a815c34c9427ec997a22a0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/menu using Guid(6500f57a8a815c34c9427ec997a22a0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44fee5e741c14b5a414add40135283db') in 0.032700 seconds 
-  Import took 0.051824 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.916096 seconds.
+  Time since last request: 8.294466 seconds.
   path: Assets/menu/maple-valley-m_banner.jpg
   artifactKey: Guid(750c25b7409c0f44ca9b030bb3992a12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/menu/maple-valley-m_banner.jpg using Guid(750c25b7409c0f44ca9b030bb3992a12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7904359220081e077b0e37359f09fb6') in 0.231588 seconds 
-  Import took 0.245418 seconds .
+Start importing Assets/menu/maple-valley-m_banner.jpg using Guid(750c25b7409c0f44ca9b030bb3992a12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7904359220081e077b0e37359f09fb6') in 0.085651 seconds 
+  Import took 0.089443 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 62.954022 seconds.
+  path: Assets/Scenes/遊戲場景.unity
+  artifactKey: Guid(506b203d15af3e44e86df6f8cef0caf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/遊戲場景.unity using Guid(506b203d15af3e44e86df6f8cef0caf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd56f288e525ca5d58d2ee1e2d5cffa27') in 0.001820 seconds 
+  Import took 0.006295 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 16.581375 seconds.
+  path: Assets/地圖
+  artifactKey: Guid(3d362af6c7675934f9aa39413cce17c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/地圖 using Guid(3d362af6c7675934f9aa39413cce17c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35f7c59561a7ad547f0ee26084c8ff1d') in 0.001508 seconds 
+  Import took 0.005635 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 56.740659 seconds.
+  path: Assets/地圖/1 - Grassland
+  artifactKey: Guid(b7c759e563d76fa48a6dd127f7ec9865) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/地圖/1 - Grassland using Guid(b7c759e563d76fa48a6dd127f7ec9865) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '03be00476be8c1b6b3119ad4e2de7a70') in 0.001530 seconds 
+  Import took 0.006380 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.554046 seconds.
+  path: Assets/地圖/5 - Misc. universal tiles
+  artifactKey: Guid(6c0f59ec9747082428415f58d366db16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/地圖/5 - Misc. universal tiles using Guid(6c0f59ec9747082428415f58d366db16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab96dc3fa03723c5255733a25ff08c9c') in 0.001364 seconds 
+  Import took 0.006020 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.828335 seconds.
+  path: Assets/地圖/Seasonal Tilesets
+  artifactKey: Guid(580feba3efd6ab740a25d343a30001b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/地圖/Seasonal Tilesets using Guid(580feba3efd6ab740a25d343a30001b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7348a62bd70d6623d36192f413c1f870') in 0.001261 seconds 
+  Import took 0.005195 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.599012 seconds.
+  path: Assets/地圖/Seasonal Tilesets/1 - Grassland
+  artifactKey: Guid(671318f2888a32e44b76db60ed678159) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/地圖/Seasonal Tilesets/1 - Grassland using Guid(671318f2888a32e44b76db60ed678159) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '850c7907e47c17f6f55f56fbcee81fc6') in 0.001291 seconds 
+  Import took 0.005684 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.039870 seconds.
+  path: Assets/地圖/Seasonal Tilesets/1 - Grassland/Extra_plants (16 x 16).png
+  artifactKey: Guid(40df3e6534fb8e842adc18c4e549faf7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/地圖/Seasonal Tilesets/1 - Grassland/Extra_plants (16 x 16).png using Guid(40df3e6534fb8e842adc18c4e549faf7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8babf9aa1a1dd225f947fa0a59b32f6') in 0.011301 seconds 
+  Import took 0.015191 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000285 seconds.
+  path: Assets/地圖/Seasonal Tilesets/1 - Grassland/Terrain (16 x 16).png
+  artifactKey: Guid(0b97d7cc97c943e45aede7f6d7bd5242) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/地圖/Seasonal Tilesets/1 - Grassland/Terrain (16 x 16).png using Guid(0b97d7cc97c943e45aede7f6d7bd5242) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7e1f342ca2acafc8cd36710a5c8230f') in 0.012827 seconds 
+  Import took 0.016764 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000261 seconds.
+  path: Assets/地圖/Seasonal Tilesets/1 - Grassland/Grassland_entities (16 x 16).png
+  artifactKey: Guid(dc7788fd22401f04aa2b1aae9866b60f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/地圖/Seasonal Tilesets/1 - Grassland/Grassland_entities (16 x 16).png using Guid(dc7788fd22401f04aa2b1aae9866b60f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c566abdcd2e702ff0e582cf4b1b21ef') in 0.012321 seconds 
+  Import took 0.016971 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.310415 seconds.
+  path: Assets/地圖/Seasonal Tilesets/1 - Grassland/Terrain (16 x 16).png
+  artifactKey: Guid(0b97d7cc97c943e45aede7f6d7bd5242) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/地圖/Seasonal Tilesets/1 - Grassland/Terrain (16 x 16).png using Guid(0b97d7cc97c943e45aede7f6d7bd5242) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32d8b064545bf619bc487b77784bc743') in 0.004508 seconds 
+  Import took 0.008215 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.015135 seconds.
+  path: Assets/地圖/Seasonal Tilesets/1 - Grassland/Terrain (16 x 16).png
+  artifactKey: Guid(0b97d7cc97c943e45aede7f6d7bd5242) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/地圖/Seasonal Tilesets/1 - Grassland/Terrain (16 x 16).png using Guid(0b97d7cc97c943e45aede7f6d7bd5242) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32d8b064545bf619bc487b77784bc743') in 0.004677 seconds 
+  Import took 0.009240 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 37.523489 seconds.
+  path: Assets/地圖/Seasonal Tilesets/1 - Grassland/Terrain (16 x 16).png
+  artifactKey: Guid(0b97d7cc97c943e45aede7f6d7bd5242) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/地圖/Seasonal Tilesets/1 - Grassland/Terrain (16 x 16).png using Guid(0b97d7cc97c943e45aede7f6d7bd5242) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5764f6d74260e8c1e7c0f29c45352e7c') in 0.072416 seconds 
+  Import took 0.076296 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 71.909713 seconds.
+  path: Assets/拼接素材/Terrain (16 x 16)_0.asset
+  artifactKey: Guid(631145bfb214fa24fbe4f51b3c84ddb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/拼接素材/Terrain (16 x 16)_0.asset using Guid(631145bfb214fa24fbe4f51b3c84ddb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37084db376162f39ce3cb41cd65ed924') in 0.011743 seconds 
+  Import took 0.015946 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000337 seconds.
+  path: Assets/拼接素材/Terrain (16 x 16)_7.asset
+  artifactKey: Guid(558cf455593a843458dff6e45bfed44b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/拼接素材/Terrain (16 x 16)_7.asset using Guid(558cf455593a843458dff6e45bfed44b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06400c763c6d3d822dee45c7044d9477') in 0.004017 seconds 
+  Import took 0.008185 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000243 seconds.
+  path: Assets/拼接素材/Terrain (16 x 16)_12.asset
+  artifactKey: Guid(d68861ac5ccc02748bb1e5a8a301cfa8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/拼接素材/Terrain (16 x 16)_12.asset using Guid(d68861ac5ccc02748bb1e5a8a301cfa8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54ed90943c8d86023bd43d7edfc6e8d4') in 0.004952 seconds 
+  Import took 0.009533 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000229 seconds.
+  path: Assets/拼接素材/Terrain (16 x 16)_9.asset
+  artifactKey: Guid(9afa011bb2862b34ba32fe02cda77311) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/拼接素材/Terrain (16 x 16)_9.asset using Guid(9afa011bb2862b34ba32fe02cda77311) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd156856df3996d9e5be662164613824c') in 0.005123 seconds 
+  Import took 0.009283 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000283 seconds.
+  path: Assets/拼接素材/Terrain (16 x 16)_2.asset
+  artifactKey: Guid(e1b2be31c7941804e8227272770ae2f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/拼接素材/Terrain (16 x 16)_2.asset using Guid(e1b2be31c7941804e8227272770ae2f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9594e7d4791576086d3c07ce2eb70fdb') in 0.004450 seconds 
+  Import took 0.009029 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000224 seconds.
+  path: Assets/拼接素材/Terrain (16 x 16)_15.asset
+  artifactKey: Guid(5c23c9813b835c4419935041dd5425a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/拼接素材/Terrain (16 x 16)_15.asset using Guid(5c23c9813b835c4419935041dd5425a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '644e56939dc3f8f0365af98370e667a2') in 0.005347 seconds 
+  Import took 0.009159 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000193 seconds.
+  path: Assets/拼接素材/Terrain (16 x 16)_10.asset
+  artifactKey: Guid(6b4b08c1a1fdda14e8dd8afb74694bbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/拼接素材/Terrain (16 x 16)_10.asset using Guid(6b4b08c1a1fdda14e8dd8afb74694bbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f614c73bd53f92f51af069b08445a989') in 0.005556 seconds 
+  Import took 0.009754 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000328 seconds.
+  path: Assets/拼接素材/Terrain (16 x 16)_14.asset
+  artifactKey: Guid(14ec1dd588520fe498cd2b1f10cb6bdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/拼接素材/Terrain (16 x 16)_14.asset using Guid(14ec1dd588520fe498cd2b1f10cb6bdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb58c88af53213dd2cab48facd141194') in 0.005224 seconds 
+  Import took 0.009948 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000140 seconds.
+  path: Assets/拼接素材/Terrain (16 x 16)_3.asset
+  artifactKey: Guid(9cfcb7b2e4c6e7a4b978135347b9d5e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/拼接素材/Terrain (16 x 16)_3.asset using Guid(9cfcb7b2e4c6e7a4b978135347b9d5e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c0d497476ca42aca587cda2c254904f') in 0.004401 seconds 
+  Import took 0.008861 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000225 seconds.
+  path: Assets/拼接素材/Terrain (16 x 16)_1.asset
+  artifactKey: Guid(d21874dd8fecd1143babf2d9cbb3521d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/拼接素材/Terrain (16 x 16)_1.asset using Guid(d21874dd8fecd1143babf2d9cbb3521d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db71cb80a3b69087ad269b59bad4217a') in 0.003797 seconds 
+  Import took 0.008132 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000154 seconds.
+  path: Assets/拼接素材/Terrain (16 x 16)_11.asset
+  artifactKey: Guid(f139155c92981a442ab4158e0de13c81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/拼接素材/Terrain (16 x 16)_11.asset using Guid(f139155c92981a442ab4158e0de13c81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '34a2c0e07a35be0118233abb1b53fb9c') in 0.003848 seconds 
+  Import took 0.008454 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000140 seconds.
+  path: Assets/拼接素材/Terrain (16 x 16)_8.asset
+  artifactKey: Guid(e5339d53665eb544f8f8a046661426db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/拼接素材/Terrain (16 x 16)_8.asset using Guid(e5339d53665eb544f8f8a046661426db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1146c91775e29e0a50471eb4c4f166df') in 0.004109 seconds 
+  Import took 0.008200 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000224 seconds.
+  path: Assets/拼接素材/Terrain (16 x 16)_4.asset
+  artifactKey: Guid(cd47a11a9040ef944b515d7b5b0a1d33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/拼接素材/Terrain (16 x 16)_4.asset using Guid(cd47a11a9040ef944b515d7b5b0a1d33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09cb72b40a814d3233313b3131df5b18') in 0.004050 seconds 
+  Import took 0.008197 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000141 seconds.
+  path: Assets/拼接素材/Terrain (16 x 16)_16.asset
+  artifactKey: Guid(5310690dd8a554a429a29cbace11e42b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/拼接素材/Terrain (16 x 16)_16.asset using Guid(5310690dd8a554a429a29cbace11e42b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd39a833999a8cce460f0d2a9c500791b') in 0.004608 seconds 
+  Import took 0.008795 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000241 seconds.
+  path: Assets/拼接素材/Terrain (16 x 16)_5.asset
+  artifactKey: Guid(5beb7f2db193fd74fa8e4caaff7229cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/拼接素材/Terrain (16 x 16)_5.asset using Guid(5beb7f2db193fd74fa8e4caaff7229cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '937321ac650bf6016db54c21120f7c27') in 0.003692 seconds 
+  Import took 0.007759 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000201 seconds.
+  path: Assets/拼接素材/Terrain (16 x 16)_13.asset
+  artifactKey: Guid(8a18fb5c1afec924ea33d3b8df8375f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/拼接素材/Terrain (16 x 16)_13.asset using Guid(8a18fb5c1afec924ea33d3b8df8375f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3eef7f88288c94be95e2b1800d0597ed') in 0.003955 seconds 
+  Import took 0.008306 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000183 seconds.
+  path: Assets/拼接素材/Terrain (16 x 16)_6.asset
+  artifactKey: Guid(b23b567f2a1f43740a1aefe2d3cd78b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/拼接素材/Terrain (16 x 16)_6.asset using Guid(b23b567f2a1f43740a1aefe2d3cd78b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab5c58a78e2f4ed377516012653b4008') in 0.003828 seconds 
+  Import took 0.008097 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.608278 seconds.
+  path: Assets/拼接素材/Terrain (16 x 16)_17.asset
+  artifactKey: Guid(b9f7c8bbc722a5846b1752af6dac6b47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/拼接素材/Terrain (16 x 16)_17.asset using Guid(b9f7c8bbc722a5846b1752af6dac6b47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89383d98e01058537ff06c146a48dc1c') in 0.004391 seconds 
+  Import took 0.009093 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000329 seconds.
+  path: Assets/拼接素材/Terrain (16 x 16)_19.asset
+  artifactKey: Guid(9b5dace47f60d8d46a3b9c55d6e31ccd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/拼接素材/Terrain (16 x 16)_19.asset using Guid(9b5dace47f60d8d46a3b9c55d6e31ccd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1aec02c6325f8bcba2f469785f093693') in 0.004011 seconds 
+  Import took 0.008285 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000223 seconds.
+  path: Assets/拼接素材/Terrain (16 x 16)_20.asset
+  artifactKey: Guid(86cc231a5b3a952459a2eca8c7d6b822) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/拼接素材/Terrain (16 x 16)_20.asset using Guid(86cc231a5b3a952459a2eca8c7d6b822) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1b66d9848476d85110ccb02e1d82863') in 0.004688 seconds 
+  Import took 0.008890 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000305 seconds.
+  path: Assets/拼接素材/Terrain (16 x 16)_18.asset
+  artifactKey: Guid(4ddd4da88fd045b4ba5fe18c9a194ec1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/拼接素材/Terrain (16 x 16)_18.asset using Guid(4ddd4da88fd045b4ba5fe18c9a194ec1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0aefedfe94d903ba63ccf1d31fd54f4d') in 0.005993 seconds 
+  Import took 0.010338 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.040829 seconds.
+  path: Assets/拼接素材/Terrain (16 x 16)_21.asset
+  artifactKey: Guid(775ca018e0a5ec74fbd4ede64dd5caa9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/拼接素材/Terrain (16 x 16)_21.asset using Guid(775ca018e0a5ec74fbd4ede64dd5caa9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e679235b0ba6fc1322dda02d4cc6b1dc') in 0.004209 seconds 
+  Import took 0.008092 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000244 seconds.
+  path: Assets/拼接素材/Terrain (16 x 16)_23.asset
+  artifactKey: Guid(5eecffa2d3cc801478142b0833ea3cd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/拼接素材/Terrain (16 x 16)_23.asset using Guid(5eecffa2d3cc801478142b0833ea3cd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89fb40abde602570de6d032a7d7b6d95') in 0.005993 seconds 
+  Import took 0.009819 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000263 seconds.
+  path: Assets/拼接素材/Terrain (16 x 16)_24.asset
+  artifactKey: Guid(76bb83b7ee08cb74ab3ae4a3fdc42720) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/拼接素材/Terrain (16 x 16)_24.asset using Guid(76bb83b7ee08cb74ab3ae4a3fdc42720) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c61757ff189db59198c028a01750dbde') in 0.004100 seconds 
+  Import took 0.008378 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000207 seconds.
+  path: Assets/拼接素材/Terrain (16 x 16)_25.asset
+  artifactKey: Guid(25c550ccc11f8794391b5a7efbf235f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/拼接素材/Terrain (16 x 16)_25.asset using Guid(25c550ccc11f8794391b5a7efbf235f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93d5fab7a40a7e5b73aa46250c539e77') in 0.004944 seconds 
+  Import took 0.009607 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000217 seconds.
+  path: Assets/拼接素材/Terrain (16 x 16)_27.asset
+  artifactKey: Guid(3c8f0408c77ea1a45a785a51963e64f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/拼接素材/Terrain (16 x 16)_27.asset using Guid(3c8f0408c77ea1a45a785a51963e64f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7fbfc2a338d16df504c6bf151883c68a') in 0.004950 seconds 
+  Import took 0.009331 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000217 seconds.
+  path: Assets/拼接素材/Terrain (16 x 16)_26.asset
+  artifactKey: Guid(59fe411e8450058448d0a4ccccf6284e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/拼接素材/Terrain (16 x 16)_26.asset using Guid(59fe411e8450058448d0a4ccccf6284e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b8bd299d9d4fdce017a6d7a168c96d8') in 0.005055 seconds 
+  Import took 0.008672 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000316 seconds.
+  path: Assets/拼接素材/Terrain (16 x 16)_28.asset
+  artifactKey: Guid(f5d211879ade5c84ba623b3844a45d1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/拼接素材/Terrain (16 x 16)_28.asset using Guid(f5d211879ade5c84ba623b3844a45d1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f6e1f43847b86ba34ab1b8c104db8bd') in 0.004885 seconds 
+  Import took 0.008744 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000294 seconds.
+  path: Assets/拼接素材/Terrain (16 x 16)_22.asset
+  artifactKey: Guid(3144954454a1b2c4ab641d04047bd37c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/拼接素材/Terrain (16 x 16)_22.asset using Guid(3144954454a1b2c4ab641d04047bd37c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '140d2b2ea0412c794c8adcf629b74a94') in 0.003936 seconds 
+  Import took 0.008633 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000195 seconds.
+  path: Assets/拼接素材/Terrain (16 x 16)_26.asset
+  artifactKey: Guid(59fe411e8450058448d0a4ccccf6284e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/拼接素材/Terrain (16 x 16)_26.asset using Guid(59fe411e8450058448d0a4ccccf6284e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b8bd299d9d4fdce017a6d7a168c96d8') in 0.008455 seconds 
+  Import took 0.012557 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000276 seconds.
+  path: Assets/拼接素材/Terrain (16 x 16)_21.asset
+  artifactKey: Guid(775ca018e0a5ec74fbd4ede64dd5caa9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/拼接素材/Terrain (16 x 16)_21.asset using Guid(775ca018e0a5ec74fbd4ede64dd5caa9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e679235b0ba6fc1322dda02d4cc6b1dc') in 0.003705 seconds 
+  Import took 0.008294 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.146884 seconds.
+  path: Assets/拼接素材/Terrain (16 x 16)_29.asset
+  artifactKey: Guid(a22ae7d37a573ac44a829e8ee1d71fc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/拼接素材/Terrain (16 x 16)_29.asset using Guid(a22ae7d37a573ac44a829e8ee1d71fc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df93704547a42273de1b38792bd36379') in 0.004322 seconds 
+  Import took 0.008561 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000226 seconds.
+  path: Assets/拼接素材/Terrain (16 x 16)_31.asset
+  artifactKey: Guid(9e3b6eba35375c14aae315f082d9748b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/拼接素材/Terrain (16 x 16)_31.asset using Guid(9e3b6eba35375c14aae315f082d9748b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07f4af2b16dfdb16ac7f7ad07348b80d') in 0.004222 seconds 
+  Import took 0.007979 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000349 seconds.
+  path: Assets/拼接素材/Terrain (16 x 16)_34.asset
+  artifactKey: Guid(00ae799a91d550d43ae30fde625da316) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/拼接素材/Terrain (16 x 16)_34.asset using Guid(00ae799a91d550d43ae30fde625da316) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a82582ec1cb7bb16e8a762557f83142c') in 0.004337 seconds 
+  Import took 0.008532 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000372 seconds.
+  path: Assets/拼接素材/Terrain (16 x 16)_33.asset
+  artifactKey: Guid(09311a17a00fd3740913f8895785eb47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/拼接素材/Terrain (16 x 16)_33.asset using Guid(09311a17a00fd3740913f8895785eb47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c542d5a05825865fe0031974e3eaf22') in 0.003693 seconds 
+  Import took 0.007893 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000232 seconds.
+  path: Assets/拼接素材/Terrain (16 x 16)_30.asset
+  artifactKey: Guid(9fb51e8dea2382543be58b56eb2ba676) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/拼接素材/Terrain (16 x 16)_30.asset using Guid(9fb51e8dea2382543be58b56eb2ba676) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a2bb88bda70f67d8bed811903a06321') in 0.005285 seconds 
+  Import took 0.010142 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000239 seconds.
+  path: Assets/拼接素材/Terrain (16 x 16)_35.asset
+  artifactKey: Guid(9c03f5f8a028ba245b63c01bb5224fd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/拼接素材/Terrain (16 x 16)_35.asset using Guid(9c03f5f8a028ba245b63c01bb5224fd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c8761c01fd1ba3d2a772c5c44bfe047') in 0.004491 seconds 
+  Import took 0.008711 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000184 seconds.
+  path: Assets/拼接素材/Terrain (16 x 16)_30.asset
+  artifactKey: Guid(9fb51e8dea2382543be58b56eb2ba676) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/拼接素材/Terrain (16 x 16)_30.asset using Guid(9fb51e8dea2382543be58b56eb2ba676) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a2bb88bda70f67d8bed811903a06321') in 0.003537 seconds 
+  Import took 0.007416 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000194 seconds.
+  path: Assets/拼接素材/Terrain (16 x 16)_32.asset
+  artifactKey: Guid(f7181df344194bb498f94b9830055a32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/拼接素材/Terrain (16 x 16)_32.asset using Guid(f7181df344194bb498f94b9830055a32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ac556932c0aa7bf39e8a8377403c5e8') in 0.004547 seconds 
+  Import took 0.008521 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000320 seconds.
+  path: Assets/拼接素材/Terrain (16 x 16)_36.asset
+  artifactKey: Guid(d11a785c05a77394491cfc4de5d4d51a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/拼接素材/Terrain (16 x 16)_36.asset using Guid(d11a785c05a77394491cfc4de5d4d51a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5dc18f2c8cf662f491a47a10f7f1056f') in 0.004625 seconds 
+  Import took 0.009433 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000248 seconds.
+  path: Assets/拼接素材/Terrain (16 x 16)_29.asset
+  artifactKey: Guid(a22ae7d37a573ac44a829e8ee1d71fc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/拼接素材/Terrain (16 x 16)_29.asset using Guid(a22ae7d37a573ac44a829e8ee1d71fc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df93704547a42273de1b38792bd36379') in 0.003826 seconds 
+  Import took 0.008278 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000203 seconds.
+  path: Assets/拼接素材/地板.prefab
+  artifactKey: Guid(47b8c573f28a1a7418b44604f772fde0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/拼接素材/地板.prefab using Guid(47b8c573f28a1a7418b44604f772fde0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4b6d332675dcfab9165afb420d4f082') in 0.008192 seconds 
+  Import took 0.012531 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 39.174691 seconds.
+  path: Assets/地圖/Seasonal Tilesets/1 - Grassland/Terrain (16 x 16).png
+  artifactKey: Guid(0b97d7cc97c943e45aede7f6d7bd5242) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/地圖/Seasonal Tilesets/1 - Grassland/Terrain (16 x 16).png using Guid(0b97d7cc97c943e45aede7f6d7bd5242) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2fe9bb8e2536dba475d0e4c95c02aa07') in 0.051160 seconds 
+  Import took 0.055233 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 18.132660 seconds.
+  path: Assets/地圖/Seasonal Tilesets/1 - Grassland/Terrain (16 x 16).png
+  artifactKey: Guid(0b97d7cc97c943e45aede7f6d7bd5242) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/地圖/Seasonal Tilesets/1 - Grassland/Terrain (16 x 16).png using Guid(0b97d7cc97c943e45aede7f6d7bd5242) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7cdceb7ab9db558cd2b87d046862c7e') in 0.066899 seconds 
+  Import took 0.071117 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.189212 seconds.
+  path: Assets/地圖/Seasonal Tilesets/1 - Grassland/Extra_plants (16 x 16).png
+  artifactKey: Guid(40df3e6534fb8e842adc18c4e549faf7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/地圖/Seasonal Tilesets/1 - Grassland/Extra_plants (16 x 16).png using Guid(40df3e6534fb8e842adc18c4e549faf7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8509e9436244e50ba83da26670a4f198') in 0.008184 seconds 
+  Import took 0.012249 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.011053 seconds.
+  path: Assets/地圖/Seasonal Tilesets/1 - Grassland/Extra_plants (16 x 16).png
+  artifactKey: Guid(40df3e6534fb8e842adc18c4e549faf7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/地圖/Seasonal Tilesets/1 - Grassland/Extra_plants (16 x 16).png using Guid(40df3e6534fb8e842adc18c4e549faf7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8509e9436244e50ba83da26670a4f198') in 0.006437 seconds 
+  Import took 0.010814 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000200 seconds.
+  path: Assets/地圖/Seasonal Tilesets/1 - Grassland/Grassland_entities (16 x 16).png
+  artifactKey: Guid(dc7788fd22401f04aa2b1aae9866b60f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/地圖/Seasonal Tilesets/1 - Grassland/Grassland_entities (16 x 16).png using Guid(dc7788fd22401f04aa2b1aae9866b60f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35ca1f717217c3c0f18e3a503e794bb2') in 0.005810 seconds 
+  Import took 0.009292 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.539708 seconds.
+  path: Assets/地圖/Seasonal Tilesets/1 - Grassland/Extra_plants (16 x 16).png
+  artifactKey: Guid(40df3e6534fb8e842adc18c4e549faf7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/地圖/Seasonal Tilesets/1 - Grassland/Extra_plants (16 x 16).png using Guid(40df3e6534fb8e842adc18c4e549faf7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ae1e8604a71850918eb72e87564c52c') in 0.006894 seconds 
+  Import took 0.011229 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.017674 seconds.
+  path: Assets/地圖/Seasonal Tilesets/1 - Grassland/Extra_plants (16 x 16).png
+  artifactKey: Guid(40df3e6534fb8e842adc18c4e549faf7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/地圖/Seasonal Tilesets/1 - Grassland/Extra_plants (16 x 16).png using Guid(40df3e6534fb8e842adc18c4e549faf7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ae1e8604a71850918eb72e87564c52c') in 0.007770 seconds 
+  Import took 0.011831 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000192 seconds.
+  path: Assets/地圖/Seasonal Tilesets/1 - Grassland/Grassland_entities (16 x 16).png
+  artifactKey: Guid(dc7788fd22401f04aa2b1aae9866b60f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/地圖/Seasonal Tilesets/1 - Grassland/Grassland_entities (16 x 16).png using Guid(dc7788fd22401f04aa2b1aae9866b60f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd54e9aa1214dc96835da89d231d4b73') in 0.005060 seconds 
+  Import took 0.008537 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.687577 seconds.
+  path: Assets/地圖/Seasonal Tilesets/1 - Grassland/Background parts
+  artifactKey: Guid(8a0bb40d475033e4f870162bbcc6093e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/地圖/Seasonal Tilesets/1 - Grassland/Background parts using Guid(8a0bb40d475033e4f870162bbcc6093e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c42402ac76457daa58ae30b662de8227') in 0.001629 seconds 
+  Import took 0.006366 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.043655 seconds.
+  path: Assets/地圖/Seasonal Tilesets/1 - Grassland/Background parts/1 - Foreground_scenery.png
+  artifactKey: Guid(a821be1a1b6678844a48d9078c18e5e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/地圖/Seasonal Tilesets/1 - Grassland/Background parts/1 - Foreground_scenery.png using Guid(a821be1a1b6678844a48d9078c18e5e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0168dad70fe27d3339fefd48de054f6b') in 0.007900 seconds 
+  Import took 0.012239 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000215 seconds.
+  path: Assets/地圖/Seasonal Tilesets/1 - Grassland/Background parts/3 - Cloud_cover_1.png
+  artifactKey: Guid(5efefe1b97a82e643ad088136c3179ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/地圖/Seasonal Tilesets/1 - Grassland/Background parts/3 - Cloud_cover_1.png using Guid(5efefe1b97a82e643ad088136c3179ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa77ce843d372d484edfa281fc73771a') in 0.009095 seconds 
+  Import took 0.012997 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000268 seconds.
+  path: Assets/地圖/Seasonal Tilesets/1 - Grassland/Background parts/5 - Sky_color.png
+  artifactKey: Guid(8775f8080ab52a1488055413af00d93b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/地圖/Seasonal Tilesets/1 - Grassland/Background parts/5 - Sky_color.png using Guid(8775f8080ab52a1488055413af00d93b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '404f59ee5edb0d36aa926e23425708de') in 0.008514 seconds 
+  Import took 0.013470 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000241 seconds.
+  path: Assets/地圖/Seasonal Tilesets/1 - Grassland/Background parts/_Complete_static_BG_(288 x 208).png
+  artifactKey: Guid(635b5f3fc9b374140a6b894daa082872) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/地圖/Seasonal Tilesets/1 - Grassland/Background parts/_Complete_static_BG_(288 x 208).png using Guid(635b5f3fc9b374140a6b894daa082872) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '649ae72ffe75d2fa2a92aa1cd30665de') in 0.011710 seconds 
+  Import took 0.016123 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000300 seconds.
+  path: Assets/地圖/Seasonal Tilesets/1 - Grassland/Background parts/4 - Cloud_cover_2.png
+  artifactKey: Guid(08df82d0c3d906044897cdfb946bc0cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/地圖/Seasonal Tilesets/1 - Grassland/Background parts/4 - Cloud_cover_2.png using Guid(08df82d0c3d906044897cdfb946bc0cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9151c42be3be92e99408ac031afd5f61') in 0.008013 seconds 
+  Import took 0.011720 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000245 seconds.
+  path: Assets/地圖/Seasonal Tilesets/1 - Grassland/Background parts/2 - Hills.png
+  artifactKey: Guid(474a8e843d8f5124e9ed193fe4ad7151) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/地圖/Seasonal Tilesets/1 - Grassland/Background parts/2 - Hills.png using Guid(474a8e843d8f5124e9ed193fe4ad7151) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31ed41ff08b60a28e1f961cb4cb59c74') in 0.007700 seconds 
+  Import took 0.012219 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.004295 seconds.
+  path: Assets/地圖/Seasonal Tilesets/1 - Grassland/Background parts/4 - Cloud_cover_2.png
+  artifactKey: Guid(08df82d0c3d906044897cdfb946bc0cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/地圖/Seasonal Tilesets/1 - Grassland/Background parts/4 - Cloud_cover_2.png using Guid(08df82d0c3d906044897cdfb946bc0cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9151c42be3be92e99408ac031afd5f61') in 0.006119 seconds 
+  Import took 0.009968 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.406447 seconds.
+  path: Assets/地圖/Seasonal Tilesets/5 - Misc. universal tiles/Blocks (16 x 16).png
+  artifactKey: Guid(ffd9ecf445e587149b92c58651de1268) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/地圖/Seasonal Tilesets/5 - Misc. universal tiles/Blocks (16 x 16).png using Guid(ffd9ecf445e587149b92c58651de1268) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf6b44a233b8bb0b7717c5cf767c08a3') in 0.007625 seconds 
+  Import took 0.012386 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000337 seconds.
+  path: Assets/地圖/Seasonal Tilesets/5 - Misc. universal tiles/Snack_machine_Bench_Trash_bin (16 x 16).png
+  artifactKey: Guid(a8128c269f02a1b428e8d6cdfca3a8ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/地圖/Seasonal Tilesets/5 - Misc. universal tiles/Snack_machine_Bench_Trash_bin (16 x 16).png using Guid(a8128c269f02a1b428e8d6cdfca3a8ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78f92a896e133cc910cfca0e445ba6b4') in 0.007138 seconds 
+  Import took 0.010662 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000219 seconds.
+  path: Assets/地圖/Seasonal Tilesets/5 - Misc. universal tiles/Bubbling_Oil_frames (16 x 32).png
+  artifactKey: Guid(67fde8960f4a753419f4b6c01d31f6f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/地圖/Seasonal Tilesets/5 - Misc. universal tiles/Bubbling_Oil_frames (16 x 32).png using Guid(67fde8960f4a753419f4b6c01d31f6f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1baf88e924c37de21620fa7c0b30c474') in 0.011096 seconds 
+  Import took 0.015782 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000331 seconds.
+  path: Assets/地圖/Seasonal Tilesets/5 - Misc. universal tiles/House (112 x 96).png
+  artifactKey: Guid(7b711e2f491363f4b819ee2774eb30dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/地圖/Seasonal Tilesets/5 - Misc. universal tiles/House (112 x 96).png using Guid(7b711e2f491363f4b819ee2774eb30dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '032317e8f13d108722295a5d7c90ea03') in 0.010443 seconds 
+  Import took 0.015095 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000202 seconds.
+  path: Assets/地圖/Seasonal Tilesets/5 - Misc. universal tiles/Metal_Wire_fence (16 x 16).png
+  artifactKey: Guid(fe189fc2b17695645811871eec7f6552) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/地圖/Seasonal Tilesets/5 - Misc. universal tiles/Metal_Wire_fence (16 x 16).png using Guid(fe189fc2b17695645811871eec7f6552) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c34cbd91894396329b9882be51157989') in 0.007815 seconds 
+  Import took 0.012380 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000289 seconds.
+  path: Assets/地圖/Seasonal Tilesets/5 - Misc. universal tiles/Rock_shape (16 x 16).png
+  artifactKey: Guid(7669612053885a944b742e0d0e214663) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/地圖/Seasonal Tilesets/5 - Misc. universal tiles/Rock_shape (16 x 16).png using Guid(7669612053885a944b742e0d0e214663) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e6869752402425cefbe4d502629dd06') in 0.005873 seconds 
+  Import took 0.010144 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000179 seconds.
+  path: Assets/地圖/Seasonal Tilesets/5 - Misc. universal tiles/Flowers (16 x 16).png
+  artifactKey: Guid(8728ef4a334fc1c40accad0e89aa5ab3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/地圖/Seasonal Tilesets/5 - Misc. universal tiles/Flowers (16 x 16).png using Guid(8728ef4a334fc1c40accad0e89aa5ab3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a74c8103ee471b2961770b484367f6d') in 0.007397 seconds 
+  Import took 0.011353 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000173 seconds.
+  path: Assets/地圖/Seasonal Tilesets/5 - Misc. universal tiles/Lava_frames (16 x 32).png
+  artifactKey: Guid(5419a79a8051e9a40a477364da81acc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/地圖/Seasonal Tilesets/5 - Misc. universal tiles/Lava_frames (16 x 32).png using Guid(5419a79a8051e9a40a477364da81acc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd300397625eeba2e36e85d235b15761d') in 0.006249 seconds 
+  Import took 0.009804 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000206 seconds.
+  path: Assets/地圖/Seasonal Tilesets/5 - Misc. universal tiles/Water_frames (16 x 32).png
+  artifactKey: Guid(ca7ca2b0c3db9b4478490e3d3d57d927) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/地圖/Seasonal Tilesets/5 - Misc. universal tiles/Water_frames (16 x 32).png using Guid(ca7ca2b0c3db9b4478490e3d3d57d927) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e721212546e91a671834ba1f170ad365') in 0.007284 seconds 
+  Import took 0.011598 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.005201 seconds.
+  path: Assets/地圖/Seasonal Tilesets/5 - Misc. universal tiles/Water_frames (16 x 32).png
+  artifactKey: Guid(ca7ca2b0c3db9b4478490e3d3d57d927) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/地圖/Seasonal Tilesets/5 - Misc. universal tiles/Water_frames (16 x 32).png using Guid(ca7ca2b0c3db9b4478490e3d3d57d927) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e721212546e91a671834ba1f170ad365') in 0.005104 seconds 
+  Import took 0.009198 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.191160 seconds.
+Registered in 0.001751 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.65 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.46 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.090 seconds
+- Completed reload, in  0.998 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.53 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.47 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2075 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 95.8 MB.
-System memory in use after: 95.7 MB.
+Unloading 2070 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 95.2 MB.
+System memory in use after: 95.4 MB.
 
-Unloading 21 unused Assets to reduce memory usage. Loaded Objects now: 2523.
-Total: 2.328352 ms (FindLiveObjects: 0.202424 ms CreateObjectMapping: 0.089823 ms MarkObjects: 1.936337 ms  DeleteObjects: 0.098806 ms)
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2552.
+Total: 2.553512 ms (FindLiveObjects: 0.257597 ms CreateObjectMapping: 0.084048 ms MarkObjects: 2.195187 ms  DeleteObjects: 0.015719 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
