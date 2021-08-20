@@ -63,7 +63,6 @@ public class player : MonoBehaviour
         // 水平值 = 輸入.取得軸向(軸向名稱)
         // 作用: 取得玩家按下水平按鍵的值, 按右為 1 , 按左為-1, 沒按為 0 
         hValue = Input.GetAxis("Horizontal");
-        //print("玩家水平值: " + hValue);
     }
     [Header("重力"), Range(0.01f, 3)]
     public float gravity = 3;
