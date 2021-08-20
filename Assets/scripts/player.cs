@@ -12,9 +12,9 @@ public class player : MonoBehaviour
     [Header("是否在地板上")]
     public bool onFloor = false;
 
-    private AudioSource aud;
-    private Rigidbody2D rig;
-    private Animator ani;
+    private AudioSource aud;                    //音效來源
+    private Rigidbody2D rig;                    //剛體
+    private Animator ani;                       //動畫
     /// <summary>
     /// 玩家水平輸入數值
     /// </summary>
@@ -24,9 +24,10 @@ public class player : MonoBehaviour
     #region 事件
     private void Start()
     {
-        rig = GetComponent<Rigidbody2D>();
-        ani = GetComponent<Animator>();
+        rig = GetComponent<Rigidbody2D>();      //取得剛體
+        ani = GetComponent<Animator>();         //取得動畫
     }
+
     private void Update()
     {
         GetPlayerInputHorizontal();
@@ -34,6 +35,7 @@ public class player : MonoBehaviour
         Jump();
         Attack();
     }
+
     private void FixedUpdate()
     {
         Move(hValue * 5);
@@ -63,8 +65,8 @@ public class player : MonoBehaviour
         hValue = Input.GetAxis("Horizontal");
         //print("玩家水平值: " + hValue);
     }
-    [Header("重力"), Range(0.01f, 1)]
-    public float gravity = 1;
+    [Header("重力"), Range(0.01f, 3)]
+    public float gravity = 3;
 
     /// <summary>
     /// 移動
@@ -95,12 +97,12 @@ public class player : MonoBehaviour
     private void Turndirection()
     {
         // 如果玩家按D就將角度設定為(0,0,0)
-        if (Input.GetKeyDown(KeyCode.D))
+        if (Input.GetKeyDown(KeyCode.RightArrow))
         {
             transform.eulerAngles = new Vector3(0, 180, 0);
         }
         // 如果玩家按A就將角度設定為(0,180,0)
-        if (Input.GetKeyDown(KeyCode.A))
+        if (Input.GetKeyDown(KeyCode.LeftArrow))
         {
             transform.eulerAngles = Vector3.zero;
         }
@@ -124,7 +126,7 @@ public class player : MonoBehaviour
         ani.SetBool("跳躍", !onFloor);
 
         // 如果玩家按下空白鍵角色就往上跳躍
-        if (onFloor && Input.GetKeyDown(KeyCode.Space))
+        if (onFloor && Input.GetKeyDown(KeyCode.UpArrow))
         {
             rig.AddForce(new Vector2(0, jumpHeight));
         }
@@ -147,7 +149,7 @@ public class player : MonoBehaviour
     private void Attack()
     {
         // 如果不是攻擊中 並且按下左鍵才可以攻擊 啟動觸發參數
-        if (!isAttack && Input.GetKeyDown(KeyCode.Mouse0))
+        if (!isAttack && Input.GetKeyDown(KeyCode.X))
         {
             isAttack = true;
             ani.SetTrigger("攻擊");
