@@ -77,6 +77,7 @@ public class BaseEnemy : MonoBehaviour
     #endregion
 
     protected player player;
+    protected Collider2D hit;
 
     #region ¨Æ¥ó
     private void Start()

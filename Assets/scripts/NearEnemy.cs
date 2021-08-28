@@ -36,7 +36,7 @@ public class NearEnemy : BaseEnemy
     #region ¨ç¦¡
     private void CheckPlayerInAttackArea()
     {
-        Collider2D hit = Physics2D.OverlapBox(
+        hit = Physics2D.OverlapBox(
             transform.position +
             transform.right * checkAttackOffset.x +
             transform.up * checkAttackOffset.y,
