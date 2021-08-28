@@ -1,13 +1,17 @@
 using UnityEngine;
+using System.Linq;
 
 public class BaseEnemy : MonoBehaviour
 {
     #region 欄位:公開
     [Header("基本能力")]
+
     [Range(50, 5000)]
     public float hp = 100;
+
     [Range(5, 1000)]
     public float attack = 20;
+
     [Range(1, 5000)]
     public float speed = 1.5f;
 
@@ -20,8 +24,32 @@ public class BaseEnemy : MonoBehaviour
     /// </summary>
     public Vector2 v2RandomWalk = new Vector2(3, 6);
 
+    public Collider2D[] hits;
+
+    public Collider2D[] hitGround;
+
+    public Collider2D[] hitResult;
+
+    [Header("檢查前方是否有障礙物或地板球體")]
+    public Vector3 checkForwardOffset;
+
+    [Range(0, 1)]
+    public float checkForWardRadius = 0.3f;
+
+    /// <summary>
+    /// 攻擊冷卻
+    /// </summary>
+    [Range(0.5f, 5)]
+    public float cdAttack = 3;
+    [Header("第一次攻擊延遲"), Range(0.5f, 5)]
+    public float attackDelayFirst = 0.5f;
+
+    private float timerAttack;
+
+
+    //將私人欄位顯示在屬性面板上
     [SerializeField]
-    private StateEnemy state;
+    protected StateEnemy state;
     #endregion
 
     #region 欄位:私人
@@ -48,6 +76,8 @@ public class BaseEnemy : MonoBehaviour
     private float timerWalk;
     #endregion
 
+    protected player player;
+
     #region 事件
     private void Start()
     {
@@ -55,6 +85,8 @@ public class BaseEnemy : MonoBehaviour
         rig = GetComponent<Rigidbody2D>();
         ani = GetComponent<Animator>();
         aud = GetComponent<AudioSource>();
+
+        player = GameObject.Find("玩家").GetComponent<player>();
         #endregion
 
         #region 初始值設定
@@ -62,23 +94,18 @@ public class BaseEnemy : MonoBehaviour
         #endregion
     }
 
-    private void Update()
-    {
-        CheckForward();
-        CheckState();
-    }
-
     private void FixedUpdate()
     {
         WalkInFixedUpdate();
     }
 
-    [Header("檢查前方是否有障礙物或地板球體")]
-    public Vector3 checkForwardOffset;
-    [Range(0, 1)]
-    public float checkForWardRadius = 0.3f;
+    protected virtual void Update()
+    {
+        CheckForward();
+        CheckState();
+    }
 
-    private void OnDrawGizmos()
+    protected virtual void OnDrawGizmos()
     {
         Gizmos.color = new Color(1, 0.3f, 0.3f, 0.3f);
         Gizmos.DrawSphere(
@@ -89,7 +116,7 @@ public class BaseEnemy : MonoBehaviour
     }
     #endregion
 
-    public Collider2D[] hits;
+    
 
     #region 函式
 
@@ -102,7 +129,12 @@ public class BaseEnemy : MonoBehaviour
             checkForWardRadius
             );
 
-        if (hits.Length == 0)
+        hitResult = hits.Where(x => x.name != "地板" && x.name != "跳台" && x.name != "玩家").ToArray();
+
+        //前方的物體沒有地板就轉向
+        hitGround = hits.Where(x => x.name == "地板").ToArray();
+
+        if (hitGround.Length == 0 || hitResult.Length > 0)
         {
             TurnDirection();
         }
@@ -128,6 +160,7 @@ public class BaseEnemy : MonoBehaviour
             case StateEnemy.track:
                 break;
             case StateEnemy.attack:
+                Attack();
                 break;
             case StateEnemy.dead:
                 break;
@@ -164,6 +197,24 @@ public class BaseEnemy : MonoBehaviour
             timeIdle = Random.Range(v2RandomIdle.x, v2RandomIdle.y);
             timerWalk = 0;
         }
+    }
+
+    private void Attack()
+    {
+        if(timerAttack < cdAttack)
+        {
+            timerAttack += Time.deltaTime;
+        }
+        else
+        {
+            AttackMethod();
+        }
+    }
+
+    protected virtual void AttackMethod()
+    {
+        timerAttack = 0;
+        ani.SetTrigger("攻擊");
     }
 
     /// <summary>

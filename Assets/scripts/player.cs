@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class player : MonoBehaviour
 {
@@ -22,10 +23,20 @@ public class player : MonoBehaviour
     #endregion
 
     #region 事件
+    private Text textHP;
+    private Image imgHP;
+
+    private float hpMax;
+
     private void Start()
     {
         rig = GetComponent<Rigidbody2D>();      //取得剛體
         ani = GetComponent<Animator>();         //取得動畫
+
+        hpMax = HP;
+
+        textHP = GameObject.Find("血量").GetComponent<Text>();
+        imgHP = GameObject.Find("血條").GetComponent<Image>();
     }
 
     private void Update()
@@ -173,14 +184,21 @@ public class player : MonoBehaviour
     /// <param name="damage">造成的傷害</param>
     public void Hurt(float damage)
     {
+        HP -= damage;
 
+        if (HP <= 0) Dead();
+
+        textHP.text = "HP " + HP;
+        imgHP.fillAmount = HP / hpMax;
     }
     /// <summary>
     /// 死亡
     /// </summary>
     private void Dead()
     {
-
+        HP = 0;
+        ani.SetBool("死亡", true);
+        enabled = false;
     }
     /// <summary>
     /// 撿道具
