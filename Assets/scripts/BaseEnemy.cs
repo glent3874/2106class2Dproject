@@ -202,7 +202,7 @@ public class BaseEnemy : MonoBehaviour
 
     private void Attack()
     {
-        if(timerAttack < cdAttack)
+        if (timerAttack < cdAttack)
         {
             timerAttack += Time.deltaTime;
         }
@@ -215,6 +215,7 @@ public class BaseEnemy : MonoBehaviour
     protected virtual void AttackMethod()
     {
         timerAttack = 0;
+
         ani.SetTrigger("§ðÀ»");
     }
 

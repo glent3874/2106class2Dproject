@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections; // 引用 系統.集合 - 協同程序
+using System.Linq;
 
 /// <summary>
 /// 近戰角
@@ -41,6 +42,8 @@ public class NearEnemy : BaseEnemy
             transform.right * checkAttackOffset.x +
             transform.up * checkAttackOffset.y,
             checkAttackSize, 0, 1 << 7);
+
+        print(hit);
 
         if (hit) state = StateEnemy.attack;
     }
