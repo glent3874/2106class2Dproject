@@ -41,3 +41,6 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: "\u73A9\u5BB6"
+    uniqueID: 657479757
+    locked: 0
