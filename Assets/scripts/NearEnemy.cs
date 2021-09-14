@@ -5,6 +5,8 @@ using System.Linq;
 /// <summary>
 /// 近戰角
 /// </summary>
+//類別: 父類別
+//: 冒號後面第一個代表的是要繼承的類別
 public class NearEnemy : BaseEnemy
 {
     #region 欄位
@@ -35,6 +37,9 @@ public class NearEnemy : BaseEnemy
     #endregion
 
     #region 函式
+    /// <summary>
+    /// 檢查玩家是否進入攻擊區域
+    /// </summary>
     private void CheckPlayerInAttackArea()
     {
         hit = Physics2D.OverlapBox(
@@ -43,8 +48,6 @@ public class NearEnemy : BaseEnemy
             transform.up * checkAttackOffset.y,
             checkAttackSize, 0, 1 << 7);
 
-        print(hit);
-
         if (hit) state = StateEnemy.attack;
     }
 
@@ -52,13 +55,26 @@ public class NearEnemy : BaseEnemy
     {
         base.AttackMethod();
 
-        StartCoroutine(DelaySendDamageToPlayer());
+        StartCoroutine(DelaySendDamageToPlayer());  //啟動協同程序
     }
 
+    //協同程序用法:
+    //1.引用 System.collections API
+    //2.傳回方法, 傳回類型為 IEnumerator
+    //3.使用 StartCoroutine() 啟動協同程序
+    /// <summary>
+    /// 延遲將傷害傳給玩家
+    /// </summary>
     private IEnumerator DelaySendDamageToPlayer()
     {
         yield return new WaitForSeconds(attackDelayFirst);
-        player.Hurt(attack);
+        if (hit) player.Hurt(attack);
+
+        //等待攻擊後回復原本狀態時間 - 攻擊動畫最後的時間
+        yield return new WaitForSeconds(afterAttackRestoreOriginal);
+        //如果玩家還在攻擊區域內就攻擊否則就走路
+        if (hit) state = StateEnemy.attack;
+        else state = StateEnemy.walk;
     }
     #endregion
 }

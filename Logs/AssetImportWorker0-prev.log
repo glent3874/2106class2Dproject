@@ -15,11 +15,11 @@ E:/github/class/2106class2Dproject/2106class2Dproject
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-65467
+51127
 Successfully changed project path to: E:/github/class/2106class2Dproject/2106class2Dproject
 E:/github/class/2106class2Dproject/2106class2Dproject
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 60.71 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 87.50 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.12f1 (b3b2c6512326)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.12f1/Editor/Data/Resources/UnitySubsystems
@@ -33,44 +33,46 @@ Direct3D:
     Vendor:   
     VRAM:     1970 MB
     Driver:   10.18.13.5582
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
 Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.12f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.12f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.12f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56924
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56772
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.12f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.12f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001249 seconds.
+Registered in 0.001114 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 68.06 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 88.04 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.067 seconds
+- Completed reload, in  1.026 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.002225 seconds.
+Registered in 0.002345 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 65.45 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 85.42 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.236 seconds
+- Completed reload, in  1.297 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.02 seconds
-Refreshing native plugins compatible for Editor in 0.70 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.98 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2085 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 93.2 MB.
-System memory in use after: 93.3 MB.
+Unloading 3228 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 140.8 MB.
+System memory in use after: 141.0 MB.
 
-Unloading 28 unused Assets to reduce memory usage. Loaded Objects now: 2525.
-Total: 2.794784 ms (FindLiveObjects: 0.309248 ms CreateObjectMapping: 0.181892 ms MarkObjects: 2.208367 ms  DeleteObjects: 0.093994 ms)
+Unloading 28 unused Assets to reduce memory usage. Loaded Objects now: 3667.
+Total: 3.260250 ms (FindLiveObjects: 0.306681 ms CreateObjectMapping: 0.258882 ms MarkObjects: 2.663890 ms  DeleteObjects: 0.029513 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -84,790 +86,281 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/角色/怪物/無頭騎士/stand_0.png
-  artifactKey: Guid(17eb0c725f005bf40b074682f39ad05b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/角色/怪物/無頭騎士/stand_0.png using Guid(17eb0c725f005bf40b074682f39ad05b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'abee8042668d1a4f7176139c4cb08b38') in 0.137628 seconds 
-  Import took 0.141804 seconds .
-
-========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 4.18 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 14 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 54.9 MB.
-System memory in use after: 55.0 MB.
-
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2531.
-Total: 5.133394 ms (FindLiveObjects: 0.474780 ms CreateObjectMapping: 0.280697 ms MarkObjects: 4.340704 ms  DeleteObjects: 0.036250 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001980 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.59 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.992 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.65 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2075 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 95.6 MB.
-System memory in use after: 95.7 MB.
-
-Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2535.
-Total: 2.658766 ms (FindLiveObjects: 0.221992 ms CreateObjectMapping: 0.085653 ms MarkObjects: 2.317438 ms  DeleteObjects: 0.032400 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001861 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.76 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.029 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.61 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2075 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 95.6 MB.
-System memory in use after: 95.8 MB.
-
-Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2539.
-Total: 2.276696 ms (FindLiveObjects: 0.193441 ms CreateObjectMapping: 0.081482 ms MarkObjects: 1.971298 ms  DeleteObjects: 0.029834 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 163.755450 seconds.
-  path: Assets/角色/怪物/無頭騎士/attack1_1.png
-  artifactKey: Guid(34c04584c066e514dbc63b225f486cf3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/角色/怪物/無頭騎士/attack1_1.png using Guid(34c04584c066e514dbc63b225f486cf3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '879ab9a11284ab52c1270fbaccd33972') in 0.062416 seconds 
-  Import took 0.066390 seconds .
+  path: Assets/Scenes/弓箭手村.unity
+  artifactKey: Guid(c51f06f017325a449a3d6621276f78e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/弓箭手村.unity using Guid(c51f06f017325a449a3d6621276f78e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '006a57ca8068b6d3ef32e8347874922b') in 0.022424 seconds 
+  Import took 0.028908 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 39.004519 seconds.
-  path: Assets/scripts/BaseEnemy.cs
-  artifactKey: Guid(70dabba03f20c3444aed822aa4b0adab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/scripts/BaseEnemy.cs using Guid(70dabba03f20c3444aed822aa4b0adab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97226abb528a3537e138db99782464b6') in 0.011893 seconds 
-  Import took 0.016049 seconds .
+  Time since last request: 65.339564 seconds.
+  path: Assets/Scenes/New Folder
+  artifactKey: Guid(6480fff503fdb5e4aa946799ee8cc517) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/New Folder using Guid(6480fff503fdb5e4aa946799ee8cc517) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c1f988bae2ce0ea462569b6909a2d7e') in 0.001509 seconds 
+  Import took 0.008571 seconds .
 
 ========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002114 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.69 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.970 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.63 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2075 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 95.7 MB.
-System memory in use after: 95.8 MB.
+Received Import Request.
+  Time since last request: 21.019569 seconds.
+  path: Assets/地圖/弓箭手村
+  artifactKey: Guid(c3521fabd98cfff429ea907138615d4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/地圖/弓箭手村 using Guid(c3521fabd98cfff429ea907138615d4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c1d2a74a9069218c2efea487d492e77') in 0.001540 seconds 
+  Import took 0.009347 seconds .
 
-Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2546.
-Total: 2.533655 ms (FindLiveObjects: 0.216859 ms CreateObjectMapping: 0.077954 ms MarkObjects: 2.218632 ms  DeleteObjects: 0.018606 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002347 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.74 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.951 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.70 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2075 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 95.7 MB.
-System memory in use after: 95.8 MB.
+Received Import Request.
+  Time since last request: 15.236975 seconds.
+  path: Assets/地圖/弓箭手村/render (1).png
+  artifactKey: Guid(742874d0bff039f42915f27e1e1e2430) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/地圖/弓箭手村/render (1).png using Guid(742874d0bff039f42915f27e1e1e2430) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b6f6622c0b04b25bed446d671d79c05') in 1.394961 seconds 
+  Import took 1.403967 seconds .
 
-Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2550.
-Total: 2.448323 ms (FindLiveObjects: 0.207876 ms CreateObjectMapping: 0.085653 ms MarkObjects: 2.122393 ms  DeleteObjects: 0.030797 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002168 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.69 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.950 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.62 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2075 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 95.7 MB.
-System memory in use after: 95.8 MB.
+Received Import Request.
+  Time since last request: 73.824615 seconds.
+  path: Assets/地圖/弓箭手村 1
+  artifactKey: Guid(2d98a7cdbbe905d4a9cd6491249aa5e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/地圖/弓箭手村 1 using Guid(2d98a7cdbbe905d4a9cd6491249aa5e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7451b74eb42fd0372b490dcd203a295b') in 0.001132 seconds 
+  Import took 0.008380 seconds .
 
-Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2554.
-Total: 2.556431 ms (FindLiveObjects: 0.212047 ms CreateObjectMapping: 0.092390 ms MarkObjects: 2.219595 ms  DeleteObjects: 0.031438 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001822 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.77 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.973 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.62 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2075 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 95.7 MB.
-System memory in use after: 95.8 MB.
+Received Import Request.
+  Time since last request: 15.431111 seconds.
+  path: Assets/地圖/弓箭手村
+  artifactKey: Guid(2d98a7cdbbe905d4a9cd6491249aa5e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/地圖/弓箭手村 using Guid(2d98a7cdbbe905d4a9cd6491249aa5e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '959144f81321117359f8b5cfb14d2ef8') in 0.001012 seconds 
+  Import took 0.016923 seconds .
 
-Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2558.
-Total: 2.202592 ms (FindLiveObjects: 0.212368 ms CreateObjectMapping: 0.089502 ms MarkObjects: 1.871209 ms  DeleteObjects: 0.028230 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001931 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.64 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.970 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.71 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2075 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 95.7 MB.
-System memory in use after: 95.8 MB.
+Received Import Request.
+  Time since last request: 67.084358 seconds.
+  path: Assets/Scenes/遊戲場景1.unity
+  artifactKey: Guid(31ba137b8d8662246855ab413bcfda81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/遊戲場景1.unity using Guid(31ba137b8d8662246855ab413bcfda81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc063c0cbd56b55c2a917cd040ea02ab') in 0.002238 seconds 
+  Import took 0.010213 seconds .
 
-Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2562.
-Total: 3.275979 ms (FindLiveObjects: 0.217821 ms CreateObjectMapping: 0.102976 ms MarkObjects: 2.919574 ms  DeleteObjects: 0.034004 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002013 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.77 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.954 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.68 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2075 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 95.7 MB.
-System memory in use after: 95.8 MB.
+Received Import Request.
+  Time since last request: 6.909258 seconds.
+  path: Assets/Scenes/遊戲場景.unity
+  artifactKey: Guid(506b203d15af3e44e86df6f8cef0caf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/遊戲場景.unity using Guid(506b203d15af3e44e86df6f8cef0caf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff12a32611f55714db15a038230cd4be') in 0.001542 seconds 
+  Import took 0.009380 seconds .
 
-Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2566.
-Total: 2.370048 ms (FindLiveObjects: 0.203706 ms CreateObjectMapping: 0.083407 ms MarkObjects: 2.050214 ms  DeleteObjects: 0.031438 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001959 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.64 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.975 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.69 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2075 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 95.7 MB.
-System memory in use after: 95.9 MB.
+Received Import Request.
+  Time since last request: 61.942863 seconds.
+  path: Assets/Scenes/弓箭手村.unity
+  artifactKey: Guid(dea198e5fc490f543b39097e0d95d730) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/弓箭手村.unity using Guid(dea198e5fc490f543b39097e0d95d730) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db165799f3aa042cf879af323bf88a1e') in 0.001525 seconds 
+  Import took 0.008719 seconds .
 
-Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2570.
-Total: 2.600701 ms (FindLiveObjects: 0.201140 ms CreateObjectMapping: 0.085974 ms MarkObjects: 2.296907 ms  DeleteObjects: 0.015719 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001856 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.58 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.956 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.61 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2075 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 95.7 MB.
-System memory in use after: 95.9 MB.
+Received Import Request.
+  Time since last request: 51.461118 seconds.
+  path: Assets/拼接素材/Terrain (16 x 16)_0.asset
+  artifactKey: Guid(631145bfb214fa24fbe4f51b3c84ddb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/拼接素材/Terrain (16 x 16)_0.asset using Guid(631145bfb214fa24fbe4f51b3c84ddb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27c89fe05c64ec68be00e442ced2e641') in 0.015407 seconds 
+  Import took 0.023036 seconds .
 
-Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2574.
-Total: 2.388334 ms (FindLiveObjects: 0.278452 ms CreateObjectMapping: 0.084690 ms MarkObjects: 2.007227 ms  DeleteObjects: 0.016361 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001890 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.74 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.952 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.60 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2075 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 95.8 MB.
-System memory in use after: 95.9 MB.
+Received Import Request.
+  Time since last request: 0.570536 seconds.
+  path: Assets/拼接素材/Terrain (16 x 16)_1.asset
+  artifactKey: Guid(d21874dd8fecd1143babf2d9cbb3521d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/拼接素材/Terrain (16 x 16)_1.asset using Guid(d21874dd8fecd1143babf2d9cbb3521d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c49a70bef5ed685279fbb49eb9346c12') in 0.005476 seconds 
+  Import took 0.012613 seconds .
 
-Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2578.
-Total: 2.476874 ms (FindLiveObjects: 0.194403 ms CreateObjectMapping: 0.082445 ms MarkObjects: 2.180457 ms  DeleteObjects: 0.018606 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001819 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.58 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.999 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.61 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2075 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 95.8 MB.
-System memory in use after: 95.9 MB.
+Received Import Request.
+  Time since last request: 0.399512 seconds.
+  path: Assets/拼接素材/Terrain (16 x 16)_3.asset
+  artifactKey: Guid(9cfcb7b2e4c6e7a4b978135347b9d5e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/拼接素材/Terrain (16 x 16)_3.asset using Guid(9cfcb7b2e4c6e7a4b978135347b9d5e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3862192952ae3a9aaecebb5c37ab6e3') in 0.004758 seconds 
+  Import took 0.011862 seconds .
 
-Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2582.
-Total: 2.409506 ms (FindLiveObjects: 0.197611 ms CreateObjectMapping: 0.094956 ms MarkObjects: 2.086143 ms  DeleteObjects: 0.029834 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001975 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.66 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.955 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.65 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2075 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 95.8 MB.
-System memory in use after: 95.9 MB.
+Received Import Request.
+  Time since last request: 16.942658 seconds.
+  path: Assets/地圖/弓箭手村/拼接素材
+  artifactKey: Guid(de9b2e2263d9c104780fd8be488bc8d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/地圖/弓箭手村/拼接素材 using Guid(de9b2e2263d9c104780fd8be488bc8d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f15cbc697b911089f9eeabc295886a0') in 0.001273 seconds 
+  Import took 0.009323 seconds .
 
-Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2586.
-Total: 2.493234 ms (FindLiveObjects: 0.236107 ms CreateObjectMapping: 0.082124 ms MarkObjects: 2.142924 ms  DeleteObjects: 0.031117 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002051 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.66 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.952 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.62 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2075 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 95.8 MB.
-System memory in use after: 95.9 MB.
+Received Import Request.
+  Time since last request: 0.582448 seconds.
+  path: Assets/地圖/弓箭手村/拼接素材/4 - Cloud_cover_2_0.asset
+  artifactKey: Guid(099fb9541e6440548822a74ff113676b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/地圖/弓箭手村/拼接素材/4 - Cloud_cover_2_0.asset using Guid(099fb9541e6440548822a74ff113676b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4b6dc3b5a27d59cb29824275391de62') in 0.002893 seconds 
+  Import took 0.010375 seconds .
 
-Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2590.
-Total: 2.537825 ms (FindLiveObjects: 0.209480 ms CreateObjectMapping: 0.091106 ms MarkObjects: 2.202913 ms  DeleteObjects: 0.033363 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001859 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.65 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.989 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.60 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2075 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 95.8 MB.
-System memory in use after: 95.9 MB.
+Received Import Request.
+  Time since last request: 0.581189 seconds.
+  path: Assets/地圖/弓箭手村/拼接素材/4 - Cloud_cover_2_1.asset
+  artifactKey: Guid(69fd42b911a380743bb8f3b061ae164d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/地圖/弓箭手村/拼接素材/4 - Cloud_cover_2_1.asset using Guid(69fd42b911a380743bb8f3b061ae164d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87f2bb1059f51a3ab4a909bed8090fe8') in 0.003078 seconds 
+  Import took 0.011749 seconds .
 
-Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2594.
-Total: 2.459872 ms (FindLiveObjects: 0.195365 ms CreateObjectMapping: 0.083407 ms MarkObjects: 2.164417 ms  DeleteObjects: 0.015719 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001915 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.64 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.955 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.69 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2075 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 95.8 MB.
-System memory in use after: 95.9 MB.
+Received Import Request.
+  Time since last request: 0.364224 seconds.
+  path: Assets/地圖/弓箭手村/拼接素材/Extra_plants (16 x 16)_0.asset
+  artifactKey: Guid(9afa942c9fe95114dbb2f45c7f6bd206) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/地圖/弓箭手村/拼接素材/Extra_plants (16 x 16)_0.asset using Guid(9afa942c9fe95114dbb2f45c7f6bd206) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e21ede2414d03519148eba10a40d392') in 0.002714 seconds 
+  Import took 0.010046 seconds .
 
-Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2598.
-Total: 2.371973 ms (FindLiveObjects: 0.233861 ms CreateObjectMapping: 0.096560 ms MarkObjects: 2.021342 ms  DeleteObjects: 0.019569 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001855 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.65 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.980 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.81 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2075 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 95.8 MB.
-System memory in use after: 95.9 MB.
+Received Import Request.
+  Time since last request: 0.350521 seconds.
+  path: Assets/地圖/弓箭手村/拼接素材/Grassland_entities (16 x 16)_1.asset
+  artifactKey: Guid(5b634c967f766f24fa8b8995233b236f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/地圖/弓箭手村/拼接素材/Grassland_entities (16 x 16)_1.asset using Guid(5b634c967f766f24fa8b8995233b236f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '063f2d4af1a504c7e778cba81c6acd0a') in 0.013908 seconds 
+  Import took 0.021703 seconds .
 
-Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2602.
-Total: 2.427471 ms (FindLiveObjects: 0.222312 ms CreateObjectMapping: 0.091106 ms MarkObjects: 2.080689 ms  DeleteObjects: 0.032400 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001873 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.66 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.998 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.65 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2075 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 95.8 MB.
-System memory in use after: 95.9 MB.
+Received Import Request.
+  Time since last request: 24.297188 seconds.
+  path: Assets/地圖/弓箭手村/拼接素材/render (1)_66.asset
+  artifactKey: Guid(b11e1e8f0daca9f428814039a8088f7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/地圖/弓箭手村/拼接素材/render (1)_66.asset using Guid(b11e1e8f0daca9f428814039a8088f7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3b3d2c988ab021c92ce728048abb543') in 0.005487 seconds 
+  Import took 0.012262 seconds .
 
-Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2606.
-Total: 2.256486 ms (FindLiveObjects: 0.204027 ms CreateObjectMapping: 0.085653 ms MarkObjects: 1.936010 ms  DeleteObjects: 0.029834 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001820 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1.09 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.014 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.66 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2075 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 95.8 MB.
-System memory in use after: 95.9 MB.
+Received Import Request.
+  Time since last request: 0.820103 seconds.
+  path: Assets/地圖/弓箭手村/拼接素材/render (1)_69.asset
+  artifactKey: Guid(d5cc0ca6d6f80074d80cae252fcbbafd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/地圖/弓箭手村/拼接素材/render (1)_69.asset using Guid(d5cc0ca6d6f80074d80cae252fcbbafd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc2823c92139b970d336b7438e783e35') in 0.007308 seconds 
+  Import took 0.015397 seconds .
 
-Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2610.
-Total: 2.544562 ms (FindLiveObjects: 0.265620 ms CreateObjectMapping: 0.083728 ms MarkObjects: 2.163776 ms  DeleteObjects: 0.030476 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002223 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.62 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.971 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.64 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2075 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 95.8 MB.
-System memory in use after: 96.0 MB.
+Received Import Request.
+  Time since last request: 0.515696 seconds.
+  path: Assets/地圖/弓箭手村/拼接素材/render (1)_73.asset
+  artifactKey: Guid(c470ee5d61460cb4682c0ad787a5f38f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/地圖/弓箭手村/拼接素材/render (1)_73.asset using Guid(c470ee5d61460cb4682c0ad787a5f38f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b56764e43778e1fbe730a1d5ee0799d') in 0.007133 seconds 
+  Import took 0.014762 seconds .
 
-Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2614.
-Total: 2.932406 ms (FindLiveObjects: 0.484403 ms CreateObjectMapping: 0.102334 ms MarkObjects: 2.297227 ms  DeleteObjects: 0.047478 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001953 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.62 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.982 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.84 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2075 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 95.8 MB.
-System memory in use after: 96.0 MB.
+Received Import Request.
+  Time since last request: 1.397951 seconds.
+  path: Assets/地圖/弓箭手村/拼接素材/render (1)_134.asset
+  artifactKey: Guid(a497dac8718617941a0945e3f17ee2c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/地圖/弓箭手村/拼接素材/render (1)_134.asset using Guid(a497dac8718617941a0945e3f17ee2c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3df255d3be39d58239309a321990abd') in 0.006228 seconds 
+  Import took 0.014683 seconds .
 
-Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2618.
-Total: 2.377747 ms (FindLiveObjects: 0.256317 ms CreateObjectMapping: 0.092069 ms MarkObjects: 2.012039 ms  DeleteObjects: 0.016361 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001883 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.65 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.954 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.66 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2075 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 95.8 MB.
-System memory in use after: 96.0 MB.
+Received Import Request.
+  Time since last request: 13.312392 seconds.
+  path: Assets/地圖/弓箭手村/拼接素材/背景.prefab
+  artifactKey: Guid(bec7872294a52b6429c36e36dd33054a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/地圖/弓箭手村/拼接素材/背景.prefab using Guid(bec7872294a52b6429c36e36dd33054a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1511408bc9907e9e6bcf69b4b3a3e6d8') in 0.009560 seconds 
+  Import took 0.015931 seconds .
 
-Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2622.
-Total: 2.256165 ms (FindLiveObjects: 0.241239 ms CreateObjectMapping: 0.092710 ms MarkObjects: 1.903930 ms  DeleteObjects: 0.017323 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001882 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.65 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.964 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.73 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2075 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 95.9 MB.
-System memory in use after: 96.0 MB.
+Received Import Request.
+  Time since last request: 0.656676 seconds.
+  path: Assets/地圖/弓箭手村/拼接素材/地板.prefab
+  artifactKey: Guid(f1fd6a9d48f0ca543a9b2b87c4120edd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/地圖/弓箭手村/拼接素材/地板.prefab using Guid(f1fd6a9d48f0ca543a9b2b87c4120edd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a413265262f19a5a229ed7af4dcd6566') in 0.019626 seconds 
+  Import took 0.026561 seconds .
 
-Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2626.
-Total: 2.595569 ms (FindLiveObjects: 0.281018 ms CreateObjectMapping: 0.088219 ms MarkObjects: 2.204196 ms  DeleteObjects: 0.019889 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001858 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.64 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.970 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.65 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2075 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 95.9 MB.
-System memory in use after: 96.0 MB.
+Received Import Request.
+  Time since last request: 35.557083 seconds.
+  path: Assets/地圖/弓箭手村/拼接素材/5 - Sky_color.asset
+  artifactKey: Guid(3e8b6771d123d18459103c9daf805ee4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/地圖/弓箭手村/拼接素材/5 - Sky_color.asset using Guid(3e8b6771d123d18459103c9daf805ee4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ac10d5cea28c9f6213124481f21fa94') in 0.002704 seconds 
+  Import took 0.010379 seconds .
 
-Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2630.
-Total: 2.456984 ms (FindLiveObjects: 0.304757 ms CreateObjectMapping: 0.089182 ms MarkObjects: 2.046364 ms  DeleteObjects: 0.015719 ms)
+========================================================================
+Received Import Request.
+  Time since last request: 1.148356 seconds.
+  path: Assets/地圖/弓箭手村/拼接素材/Extra_plants (16 x 16)_1.asset
+  artifactKey: Guid(c281602521cb7f943a6dd174c3c99fee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/地圖/弓箭手村/拼接素材/Extra_plants (16 x 16)_1.asset using Guid(c281602521cb7f943a6dd174c3c99fee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32025373aa456a3a129fa370c11472cc') in 0.002575 seconds 
+  Import took 0.009382 seconds .
 
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1.031176 seconds.
+  path: Assets/地圖/弓箭手村/拼接素材/render (1)_8.asset
+  artifactKey: Guid(818d50498ebc5f747aa3ed765fcceec2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/地圖/弓箭手村/拼接素材/render (1)_8.asset using Guid(818d50498ebc5f747aa3ed765fcceec2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '787f62e9228f8df2edd0e08572080ecf') in 0.006592 seconds 
+  Import took 0.013975 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 872.106302 seconds.
+  path: Assets/拼接素材/Terrain (16 x 16)_30.asset
+  artifactKey: Guid(9fb51e8dea2382543be58b56eb2ba676) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/拼接素材/Terrain (16 x 16)_30.asset using Guid(9fb51e8dea2382543be58b56eb2ba676) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cbff9008531db5bd4522828a9bf45d70') in 0.015744 seconds 
+  Import took 0.022539 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.463509 seconds.
+  path: Assets/拼接素材/Terrain (16 x 16)_32.asset
+  artifactKey: Guid(f7181df344194bb498f94b9830055a32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/拼接素材/Terrain (16 x 16)_32.asset using Guid(f7181df344194bb498f94b9830055a32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5fa17ab374f8421057e5deb257278096') in 0.004679 seconds 
+  Import took 0.011551 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.437481 seconds.
+  path: Assets/拼接素材/Terrain (16 x 16)_35.asset
+  artifactKey: Guid(9c03f5f8a028ba245b63c01bb5224fd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/拼接素材/Terrain (16 x 16)_35.asset using Guid(9c03f5f8a028ba245b63c01bb5224fd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e69c0d450fc05d3c46eb9268a0895ca') in 0.005158 seconds 
+  Import took 0.012518 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.077546 seconds.
+  path: Assets/拼接素材/Terrain (16 x 16)_36.asset
+  artifactKey: Guid(d11a785c05a77394491cfc4de5d4d51a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/拼接素材/Terrain (16 x 16)_36.asset using Guid(d11a785c05a77394491cfc4de5d4d51a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96db5a555eadb68cc26d24fb4ddff48c') in 0.004234 seconds 
+  Import took 0.011335 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.081421 seconds.
+  path: Assets/拼接素材/地板.prefab
+  artifactKey: Guid(47b8c573f28a1a7418b44604f772fde0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/拼接素材/地板.prefab using Guid(47b8c573f28a1a7418b44604f772fde0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92afcceae57cec3bea1b4180362a5ffd') in 0.003103 seconds 
+  Import took 0.011182 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.100251 seconds.
+  path: Assets/拼接素材/Terrain (16 x 16)_34.asset
+  artifactKey: Guid(00ae799a91d550d43ae30fde625da316) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/拼接素材/Terrain (16 x 16)_34.asset using Guid(00ae799a91d550d43ae30fde625da316) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1392d0600ee6f5d5f698b6b8b1c574e0') in 0.004876 seconds 
+  Import took 0.012037 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.121767 seconds.
+  path: Assets/地圖/Seasonal Tilesets/1 - Grassland/Extra_plants (16 x 16).png
+  artifactKey: Guid(40df3e6534fb8e842adc18c4e549faf7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/地圖/Seasonal Tilesets/1 - Grassland/Extra_plants (16 x 16).png using Guid(40df3e6534fb8e842adc18c4e549faf7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c5a1006c191678fd09191fd63f97c2a2') in 0.010811 seconds 
+  Import took 0.018221 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.466248 seconds.
+  path: Assets/地圖/Seasonal Tilesets/1 - Grassland/Grassland_entities (16 x 16).png
+  artifactKey: Guid(dc7788fd22401f04aa2b1aae9866b60f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/地圖/Seasonal Tilesets/1 - Grassland/Grassland_entities (16 x 16).png using Guid(dc7788fd22401f04aa2b1aae9866b60f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a6c5c99aeb73e9346a0d3b11ed16e05') in 0.009625 seconds 
+  Import took 0.016809 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.344983 seconds.
+  path: Assets/地圖/Seasonal Tilesets/1 - Grassland/Terrain (16 x 16).png
+  artifactKey: Guid(0b97d7cc97c943e45aede7f6d7bd5242) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/地圖/Seasonal Tilesets/1 - Grassland/Terrain (16 x 16).png using Guid(0b97d7cc97c943e45aede7f6d7bd5242) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd0c86e906fbe744baaa0bee67efc9343') in 0.076526 seconds 
+  Import took 0.082626 seconds .
+
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file

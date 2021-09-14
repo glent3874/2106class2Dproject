@@ -184,9 +184,9 @@ public class player : MonoBehaviour
     /// <param name="damage">造成的傷害</param>
     public void Hurt(float damage)
     {
-        HP -= damage;
+        HP -= damage;                       //血量扣除傷害值
 
-        if (HP <= 0) Dead();
+        if (HP <= 0) Dead();                //如果 血量 <= 0 就死亡
 
         textHP.text = "HP " + HP;
         imgHP.fillAmount = HP / hpMax;
@@ -196,9 +196,9 @@ public class player : MonoBehaviour
     /// </summary>
     private void Dead()
     {
-        HP = 0;
-        ani.SetBool("死亡", true);
-        enabled = false;
+        HP = 0;                             //血量歸零
+        ani.SetBool("死亡", true);          //死亡動畫
+        enabled = false;                    //關閉此腳本
     }
     /// <summary>
     /// 撿道具

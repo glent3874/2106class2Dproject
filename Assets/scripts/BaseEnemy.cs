@@ -43,6 +43,8 @@ public class BaseEnemy : MonoBehaviour
     public float cdAttack = 3;
     [Header("第一次攻擊延遲"), Range(0.5f, 5)]
     public float attackDelayFirst = 0.5f;
+    [Header("攻擊完成後隔多久回復原本狀態"), Range(0, 5)]
+    public float afterAttackRestoreOriginal = 1;
 
     private float timerAttack;
 
@@ -205,6 +207,7 @@ public class BaseEnemy : MonoBehaviour
         if (timerAttack < cdAttack)
         {
             timerAttack += Time.deltaTime;
+            ani.SetBool("走路", false);
         }
         else
         {
