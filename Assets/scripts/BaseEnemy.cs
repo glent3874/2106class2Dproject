@@ -76,6 +76,15 @@ public class BaseEnemy : MonoBehaviour
     /// 走路計時器
     /// </summary>
     private float timerWalk;
+
+    /// <summary>
+    /// 受傷硬直時間
+    /// </summary>
+    private float timeHurt = 0.5f;
+    /// <summary>
+    /// 受傷硬直計時器
+    /// </summary>
+    private float timerHurt;
     #endregion
 
     protected player player;
@@ -119,10 +128,21 @@ public class BaseEnemy : MonoBehaviour
     }
     #endregion
 
-    
+    #region 函式: 公開
+    public void enemyHurt(float damage)
+    {
+        hp -= damage;
+        ani.SetTrigger("受傷");
+        state = StateEnemy.hurt;
+        if (hp <= 0) Dead();
+    }
+    #endregion
 
-    #region 函式
+    #region 函式: 私人
 
+    /// <summary>
+    /// 檢查前方行走區域
+    /// </summary>
     private void CheckForward()
     {
         hits = Physics2D.OverlapCircleAll(
@@ -136,13 +156,15 @@ public class BaseEnemy : MonoBehaviour
 
         //前方的物體沒有地板就轉向
         hitGround = hits.Where(x => x.name == "地板").ToArray();
-
         if (hitGround.Length == 0 || hitResult.Length > 0)
         {
             TurnDirection();
         }
     }
 
+    /// <summary>
+    /// 轉向
+    /// </summary>
     private void TurnDirection()
     {
         float y = transform.eulerAngles.y;
@@ -150,6 +172,9 @@ public class BaseEnemy : MonoBehaviour
         else transform.eulerAngles = Vector3.zero;
     }
 
+    /// <summary>
+    /// 檢查當前狀態
+    /// </summary>
     private void CheckState() 
     {
         switch (state)
@@ -167,9 +192,15 @@ public class BaseEnemy : MonoBehaviour
                 break;
             case StateEnemy.dead:
                 break;
+            case StateEnemy.hurt:
+                Hurt();
+                break;
         }
     }
 
+    /// <summary>
+    /// 等待
+    /// </summary>
     private void Idle()
     {
         if(timerIdle < timeIdle)
@@ -186,6 +217,9 @@ public class BaseEnemy : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// 走路
+    /// </summary>
     private void Walk()
     {
         if (timerWalk < timeWalk)
@@ -202,6 +236,9 @@ public class BaseEnemy : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// 攻擊
+    /// </summary>
     private void Attack()
     {
         if (timerAttack < cdAttack)
@@ -215,11 +252,40 @@ public class BaseEnemy : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// 攻擊方式
+    /// </summary>
     protected virtual void AttackMethod()
     {
         timerAttack = 0;
 
         ani.SetTrigger("攻擊");
+    }
+
+    private void Hurt()
+    {
+        if (timerHurt < timeHurt)
+        {
+            timerHurt += Time.deltaTime;
+        }
+        else
+        {
+            timerHurt = 0;
+        }
+    }
+
+    /// <summary>
+    /// 死亡:死亡動畫, 狀態, 關閉腳本, 碰撞器, 加速度, 剛體凍結
+    /// </summary>
+    private void Dead()
+    {
+        hp = 0;
+        ani.SetBool("死亡", true);
+        state = StateEnemy.dead;
+        GetComponent<CapsuleCollider2D>().enabled = false;      //關閉碰撞器
+        rig.velocity = Vector3.zero;                            //加速度歸零
+        rig.constraints = RigidbodyConstraints2D.FreezeAll;     //剛體凍結全部
+        enabled = false;
     }
 
     /// <summary>
@@ -228,8 +294,12 @@ public class BaseEnemy : MonoBehaviour
     private void WalkInFixedUpdate()
     {
         if (state == StateEnemy.walk) rig.velocity = -transform.right * speed * Time.fixedDeltaTime + Vector3.up * rig.velocity.y;
+        
     }
 
+    /// <summary>
+    /// 隨機面對方向
+    /// </summary>
     private void RandomDirection()
     {
         int random = Random.Range(0, 2);
@@ -242,5 +312,5 @@ public class BaseEnemy : MonoBehaviour
 
 public enum StateEnemy
 {
-    idle, walk, track, attack, dead 
+    idle, walk, track, attack, dead, hurt
 }

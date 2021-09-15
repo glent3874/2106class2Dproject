@@ -10,6 +10,8 @@ public class player : MonoBehaviour
     public int jumpHeight = 3000;
     [Header("血量"), Range(0, 20000)]
     public float HP = 100;
+    [Header("攻擊力"), Range(0, 1000)]
+    public float attack = 20;
     [Header("是否在地板上")]
     public bool onFloor = false;
 
@@ -20,6 +22,10 @@ public class player : MonoBehaviour
     /// 玩家水平輸入數值
     /// </summary>
     private float hValue;
+
+    [Header("攻擊區域的位移與大小")]
+    public Vector2 checkAttackOffset;
+    public Vector2 checkAttackSize;
     #endregion
 
     #region 事件
@@ -62,6 +68,13 @@ public class player : MonoBehaviour
         // 先決定顏色在繪製圖示
         Gizmos.color = new Color(1, 0, 0, 0.3f);    // 半透明紅色
         Gizmos.DrawSphere(transform.position + groundOffset, groundRadius);   // 繪製球體(中心點, 半徑)
+
+        Gizmos.color = new Color(0.5f, 0.3f, 0.1f, 0.3f);
+        Gizmos.DrawCube(
+            transform.position +
+            transform.right * checkAttackOffset.x +
+            transform.up * checkAttackOffset.y,
+            checkAttackSize);
     }
     #endregion
 
@@ -163,6 +176,17 @@ public class player : MonoBehaviour
         {
             isAttack = true;
             ani.SetTrigger("攻擊");
+
+            Collider2D hit = Physics2D.OverlapBox(
+            transform.position +
+            transform.right * checkAttackOffset.x +
+            transform.up * checkAttackOffset.y,
+            checkAttackSize, 0, 1 << 8);
+
+            if(hit)
+            {
+                hit.GetComponent<BaseEnemy>().enemyHurt(attack);
+            }
         }
 
         if (isAttack)
@@ -191,6 +215,7 @@ public class player : MonoBehaviour
         textHP.text = "HP " + HP;
         imgHP.fillAmount = HP / hpMax;
     }
+
     /// <summary>
     /// 死亡
     /// </summary>
@@ -200,6 +225,7 @@ public class player : MonoBehaviour
         ani.SetBool("死亡", true);          //死亡動畫
         enabled = false;                    //關閉此腳本
     }
+
     /// <summary>
     /// 撿道具
     /// </summary>
