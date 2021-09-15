@@ -11409,6 +11409,7 @@ MonoBehaviour:
   cdAttack: 3
   attackDelayFirst: 1
   afterAttackRestoreOriginal: 1
+  isFlipped: 0
   state: 0
   checkAttackOffset: {x: 0.5, y: 6.7}
   checkAttackSize: {x: 28.7, y: 16}
@@ -12443,7 +12444,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee4ee6152ce637848a251844c27ba2c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hp: 100
+  hp: 1200
   attack: 20
   speed: 200
   v2RandomIdle: {x: 1, y: 5}
@@ -12456,6 +12457,7 @@ MonoBehaviour:
   cdAttack: 3
   attackDelayFirst: 0.5
   afterAttackRestoreOriginal: 1
+  isFlipped: 0
   state: 0
   checkAttackOffset: {x: 0, y: 0}
   checkAttackSize: {x: 0, y: 0}

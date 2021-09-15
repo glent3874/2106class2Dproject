@@ -46,7 +46,8 @@ public class BaseEnemy : MonoBehaviour
     [Header("攻擊完成後隔多久回復原本狀態"), Range(0, 5)]
     public float afterAttackRestoreOriginal = 1;
 
-    private float timerAttack;
+    [Header("是否轉向")]
+    public bool isFlipped = false;
 
 
     //將私人欄位顯示在屬性面板上
@@ -58,6 +59,11 @@ public class BaseEnemy : MonoBehaviour
     private Rigidbody2D rig;
     private Animator ani;
     private AudioSource aud;
+
+    /// <summary>
+    /// 攻擊計時器
+    /// </summary>
+    private float timerAttack;
 
     /// <summary>
     /// 等待時間
@@ -85,6 +91,15 @@ public class BaseEnemy : MonoBehaviour
     /// 受傷硬直計時器
     /// </summary>
     private float timerHurt;
+
+    /// <summary>
+    /// 怪物攻擊, 追蹤的目標名稱
+    /// </summary>
+    private string attackTargetName = "玩家";
+    /// <summary>
+    /// 要追蹤的目標
+    /// </summary>
+    private Transform attackTarget;
     #endregion
 
     protected player player;
@@ -99,6 +114,9 @@ public class BaseEnemy : MonoBehaviour
         aud = GetComponent<AudioSource>();
 
         player = GameObject.Find("玩家").GetComponent<player>();
+
+        //取得攻擊目標的transform;
+        attackTarget = GameObject.Find(attackTargetName).transform;
         #endregion
 
         #region 初始值設定
@@ -129,11 +147,15 @@ public class BaseEnemy : MonoBehaviour
     #endregion
 
     #region 函式: 公開
+    /// <summary>
+    /// 受傷時的血量計算, 動畫啟動, 進入受傷狀態
+    /// </summary>
+    /// <param name="damage"></param>
     public void enemyHurt(float damage)
     {
         hp -= damage;
         ani.SetTrigger("受傷");
-        state = StateEnemy.hurt;
+        state = StateEnemy.hurt;            //使怪物進入受傷狀態
         if (hp <= 0) Dead();
     }
     #endregion
@@ -159,6 +181,8 @@ public class BaseEnemy : MonoBehaviour
         if (hitGround.Length == 0 || hitResult.Length > 0)
         {
             TurnDirection();
+            if (isFlipped) isFlipped = false;
+            else isFlipped = true;
         }
     }
 
@@ -206,7 +230,6 @@ public class BaseEnemy : MonoBehaviour
         if(timerIdle < timeIdle)
         {
             timerIdle += Time.deltaTime;
-            
         }
         else
         {
@@ -262,15 +285,33 @@ public class BaseEnemy : MonoBehaviour
         ani.SetTrigger("攻擊");
     }
 
+    /// <summary>
+    /// 受傷動作
+    /// </summary>
     private void Hurt()
     {
+        Vector3 posTarget = attackTarget.position;      //目標座標
         if (timerHurt < timeHurt)
         {
             timerHurt += Time.deltaTime;
+            if(transform.position.x > posTarget.x && isFlipped)
+            {
+                transform.Rotate(0f, 180f, 0f);
+                isFlipped = false;
+            }
+            else if (transform.position.x < posTarget.x && !isFlipped)
+            {
+                transform.Rotate(0f, 180f, 0f);
+                isFlipped = true;
+            }
         }
         else
         {
+            ani.SetBool("走路", false);
+            timerIdle = 0;
+            state = StateEnemy.idle;
             timerHurt = 0;
+            timerWalk = 0;
         }
     }
 
@@ -305,7 +346,12 @@ public class BaseEnemy : MonoBehaviour
         int random = Random.Range(0, 2);
 
         if (random == 0) transform.eulerAngles = Vector2.zero;
-        else transform.eulerAngles = new Vector3(0, 180, 0);
+        else
+        {
+            transform.eulerAngles = new Vector3(0, 180, 0);
+            if (isFlipped) isFlipped = false;
+            else isFlipped = true;
+        }
     }
     #endregion
 }
