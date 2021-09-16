@@ -16,6 +16,9 @@ public class NearEnemy : BaseEnemy
     #endregion
 
     #region 事件
+    /// <summary>
+    /// 攻擊區域示意
+    /// </summary>
     protected override void OnDrawGizmos()
     {
         base.OnDrawGizmos();
@@ -47,8 +50,15 @@ public class NearEnemy : BaseEnemy
             transform.right * checkAttackOffset.x +
             transform.up * checkAttackOffset.y,
             checkAttackSize, 0, 1 << 7);
+        if(state == StateEnemy.dead)
+        {
+            checkAttackSize = Vector2.zero;     //死亡時取消攻擊區域
+        }
 
-        if (hit) state = StateEnemy.attack;
+        if (hit && state != StateEnemy.dead)    //死亡時不能攻擊
+        {
+            state = StateEnemy.attack;
+        }
     }
 
     protected override void AttackMethod()

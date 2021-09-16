@@ -11375,8 +11375,8 @@ GameObject:
   - component: {fileID: 714135130}
   - component: {fileID: 714135129}
   - component: {fileID: 714135128}
-  - component: {fileID: 714135127}
   - component: {fileID: 714135133}
+  - component: {fileID: 714135127}
   m_Layer: 8
   m_Name: "\u7121\u982D\u9A0E\u58EB"
   m_TagString: Untagged
@@ -11398,21 +11398,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hp: 5000
   attack: 5
-  speed: 300
+  speed: 1500
   v2RandomIdle: {x: 1, y: 5}
   v2RandomWalk: {x: 3, y: 6}
   hits: []
   hitGround: []
   hitResult: []
-  checkForwardOffset: {x: -6.34, y: 0.35, z: 0}
-  checkForWardRadius: 0.602
+  checkForwardOffset: {x: -5.5, y: 0, z: 0}
+  checkForWardRadius: 1
   cdAttack: 3
-  attackDelayFirst: 1
+  attackDelayFirst: 0.5
   afterAttackRestoreOriginal: 1
+  deadAnimationTime: 2.7
   isFlipped: 0
   state: 0
-  checkAttackOffset: {x: 0.5, y: 6.7}
-  checkAttackSize: {x: 28.7, y: 16}
+  checkAttackOffset: {x: 0, y: 5.3}
+  checkAttackSize: {x: 30, y: 16}
 --- !u!70 &714135128
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -11528,7 +11529,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 714135126}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 74.43, y: -1.96, z: 0}
+  m_LocalPosition: {x: 71.98, y: -2.58, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -12066,7 +12067,7 @@ MonoBehaviour:
   moveSpeed: 0
   jumpHeight: 700
   HP: 3000
-  attack: 1
+  attack: 1000
   onFloor: 0
   checkAttackOffset: {x: -2, y: 0}
   checkAttackSize: {x: 3, y: 2.5}
@@ -12457,6 +12458,7 @@ MonoBehaviour:
   cdAttack: 3
   attackDelayFirst: 0.5
   afterAttackRestoreOriginal: 1
+  deadAnimationTime: 0.8
   isFlipped: 0
   state: 0
   checkAttackOffset: {x: 0, y: 0}

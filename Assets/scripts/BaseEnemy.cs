@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Linq;
+using System.Collections;
 
 public class BaseEnemy : MonoBehaviour
 {
@@ -45,6 +46,8 @@ public class BaseEnemy : MonoBehaviour
     public float attackDelayFirst = 0.5f;
     [Header("攻擊完成後隔多久回復原本狀態"), Range(0, 5)]
     public float afterAttackRestoreOriginal = 1;
+    [Header("死亡動畫時間"), Range(0, 10)]
+    public float deadAnimationTime;
 
     [Header("是否轉向")]
     public bool isFlipped = false;
@@ -52,7 +55,11 @@ public class BaseEnemy : MonoBehaviour
 
     //將私人欄位顯示在屬性面板上
     [SerializeField]
+    [Header("當前狀態")]
     protected StateEnemy state;
+
+    protected player player;
+    protected Collider2D hit;
     #endregion
 
     #region 欄位:私人
@@ -60,10 +67,16 @@ public class BaseEnemy : MonoBehaviour
     private Animator ani;
     private AudioSource aud;
 
+    #region 計時器
     /// <summary>
     /// 攻擊計時器
     /// </summary>
-    private float timerAttack;
+    protected float timerAttack;
+
+    /// <summary>
+    /// 死亡動畫計時器
+    /// </summary>
+    private float deadtimer;
 
     /// <summary>
     /// 等待時間
@@ -91,6 +104,7 @@ public class BaseEnemy : MonoBehaviour
     /// 受傷硬直計時器
     /// </summary>
     private float timerHurt;
+    #endregion
 
     /// <summary>
     /// 怪物攻擊, 追蹤的目標名稱
@@ -101,9 +115,6 @@ public class BaseEnemy : MonoBehaviour
     /// </summary>
     private Transform attackTarget;
     #endregion
-
-    protected player player;
-    protected Collider2D hit;
 
     #region 事件
     private void Start()
@@ -154,9 +165,12 @@ public class BaseEnemy : MonoBehaviour
     public void enemyHurt(float damage)
     {
         hp -= damage;
-        ani.SetTrigger("受傷");
-        state = StateEnemy.hurt;            //使怪物進入受傷狀態
-        if (hp <= 0) Dead();
+        if(state != StateEnemy.attack)          //攻擊硬直(大於受傷)
+        {
+            ani.SetTrigger("受傷");
+            state = StateEnemy.hurt;            //使怪物進入受傷狀態
+        }
+        if (hp <= 0) state = StateEnemy.dead;
     }
     #endregion
 
@@ -215,6 +229,7 @@ public class BaseEnemy : MonoBehaviour
                 Attack();
                 break;
             case StateEnemy.dead:
+                Dead();
                 break;
             case StateEnemy.hurt:
                 Hurt();
@@ -321,12 +336,21 @@ public class BaseEnemy : MonoBehaviour
     private void Dead()
     {
         hp = 0;
+
         ani.SetBool("死亡", true);
-        state = StateEnemy.dead;
         GetComponent<CapsuleCollider2D>().enabled = false;      //關閉碰撞器
         rig.velocity = Vector3.zero;                            //加速度歸零
         rig.constraints = RigidbodyConstraints2D.FreezeAll;     //剛體凍結全部
-        enabled = false;
+
+        if(deadtimer < deadAnimationTime)
+        {
+            deadtimer += Time.deltaTime;
+        }
+        else
+        {
+            Destroy(gameObject);
+            enabled = false;
+        }
     }
 
     /// <summary>
