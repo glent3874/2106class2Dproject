@@ -46,6 +46,8 @@ public class BaseEnemy : MonoBehaviour
     public float attackDelayFirst = 0.5f;
     [Header("攻擊完成後隔多久回復原本狀態"), Range(0, 5)]
     public float afterAttackRestoreOriginal = 1;
+    [Header("受傷硬直時間"), Range(0, 2)]
+    public float timeHurt = 0.5f;
     [Header("死亡動畫時間"), Range(0, 10)]
     public float deadAnimationTime;
 
@@ -76,7 +78,7 @@ public class BaseEnemy : MonoBehaviour
     /// <summary>
     /// 死亡動畫計時器
     /// </summary>
-    private float deadtimer;
+    private float deadtimer = 0f;
 
     /// <summary>
     /// 等待時間
@@ -96,10 +98,6 @@ public class BaseEnemy : MonoBehaviour
     /// </summary>
     private float timerWalk;
 
-    /// <summary>
-    /// 受傷硬直時間
-    /// </summary>
-    private float timeHurt = 0.5f;
     /// <summary>
     /// 受傷硬直計時器
     /// </summary>
@@ -165,7 +163,7 @@ public class BaseEnemy : MonoBehaviour
     public void enemyHurt(float damage)
     {
         hp -= damage;
-        if(state != StateEnemy.attack)          //攻擊硬直(大於受傷)
+        if(state != StateEnemy.attack)          //受傷硬直(小於攻擊)
         {
             ani.SetTrigger("受傷");
             state = StateEnemy.hurt;            //使怪物進入受傷狀態
@@ -309,6 +307,7 @@ public class BaseEnemy : MonoBehaviour
         if (timerHurt < timeHurt)
         {
             timerHurt += Time.deltaTime;
+            ///受傷時轉向玩家
             if(transform.position.x > posTarget.x && isFlipped)
             {
                 transform.Rotate(0f, 180f, 0f);
