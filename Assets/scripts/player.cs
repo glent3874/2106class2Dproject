@@ -43,6 +43,9 @@ public class player : MonoBehaviour
 
         textHP = GameObject.Find("¦å¶q").GetComponent<Text>();
         imgHP = GameObject.Find("¦å±ø").GetComponent<Image>();
+
+        textHP.text = "HP " + HP;
+        imgHP.fillAmount = HP / hpMax;
     }
 
     private void Update()
