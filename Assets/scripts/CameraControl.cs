@@ -6,6 +6,8 @@ using UnityEngine;
 public class CameraControl: MonoBehaviour
 {
     #region 欄位
+    [Header("Camera大小")]
+    public float cameraSize;
     [Header("追蹤速度"), Range(0, 100)]
     public float speed = 10;
     [Header("要追蹤的物件名稱")]
@@ -28,6 +30,8 @@ public class CameraControl: MonoBehaviour
         //建議在start使用
         //目標tranform元件 = GameObject.Find(目標名稱).transform 
         target = GameObject.Find(nameTarget).transform;
+
+        Camera.main.orthographicSize = cameraSize;
     }
 
     private void LateUpdate()

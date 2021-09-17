@@ -11729,6 +11729,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da670f093547a3d448747e4308f97eed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cameraSize: 7.5
   speed: 4
   nameTarget: "\u73A9\u5BB6"
   limitHorizontal: {x: -5, y: 100}
@@ -12009,7 +12010,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1026761716}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 40.64, y: 6.37, z: 0}
+  m_LocalPosition: {x: -3.52, y: -2.08, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1193103791}
@@ -12428,7 +12429,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1178703012}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 35.54, y: 4.98, z: 0}
+  m_LocalPosition: {x: 7.47, y: -4.08, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -12914,8 +12915,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57a9c24ddf4399d44a82cb31ac2aedf2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  checkRoomOffset: {x: 0.5, y: 0}
+  checkRoomOffset: {x: 0, y: 0}
   checkRoomSize: {x: 44, y: 20}
+  movespeed: 3
+  zoomspeed: 2
   hit: {fileID: 0}
 --- !u!4 &1997624988
 Transform:
@@ -12925,7 +12928,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1997624986}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 65.56, y: 4.63, z: 0}
+  m_LocalPosition: {x: 66, y: 4.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
