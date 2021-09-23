@@ -20,6 +20,7 @@ public class BossRoom : MonoBehaviour
     #region 欄位:私人
     private Transform lockcamera;
     private Camera Cam;
+    private SpriteRenderer bossroombackground;
     #endregion
 
     #region 事件
@@ -35,6 +36,7 @@ public class BossRoom : MonoBehaviour
     private void Start()
     {
         lockcamera = GameObject.Find("Main Camera").GetComponent<Transform>();
+        bossroombackground = GameObject.Find("BossRoomBackground").GetComponent<SpriteRenderer>();
         Cam = Camera.main;
     }
     private void Update()
@@ -55,6 +57,7 @@ public class BossRoom : MonoBehaviour
         {
             lockcamera.position = Vector3.Lerp(Cam.transform.position, transform.position, movespeed * Time.deltaTime);
             Cam.orthographicSize = Mathf.Lerp(Cam.orthographicSize, 13, zoomspeed);
+            bossroombackground.color = new Color(bossroombackground.color.r, bossroombackground.color.g, bossroombackground.color.b, Mathf.Lerp(0, 1, 0.5f));
         }
         else
         {

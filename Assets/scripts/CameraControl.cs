@@ -50,7 +50,7 @@ public class CameraControl: MonoBehaviour
         Vector3 posTarget = target.position;       //B點: 目標物座標
 
         Vector3 posResult = Vector3.Lerp(poscamera, posTarget, speed * Time.deltaTime);
-        //2D遊戲攝影機預設-10
+        //2D遊戲攝影機.z預設-10
         posResult.z = -10;
 
         posResult.x = Mathf.Clamp(posResult.x, limitHorizontal.x, limitHorizontal.y);
