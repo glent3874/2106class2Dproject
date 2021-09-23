@@ -48,6 +48,8 @@ public class BossRoom : MonoBehaviour
     #region ¨ç¦¡
     private void CheckPlayerEnterRoom()
     {
+        Color colorA = new Color(bossroombackground.color.r, bossroombackground.color.g, bossroombackground.color.b, 1);
+
         hit = Physics2D.OverlapBox(
             transform.position +
             transform.right * checkRoomOffset.x +
@@ -57,7 +59,7 @@ public class BossRoom : MonoBehaviour
         {
             lockcamera.position = Vector3.Lerp(Cam.transform.position, transform.position, movespeed * Time.deltaTime);
             Cam.orthographicSize = Mathf.Lerp(Cam.orthographicSize, 13, zoomspeed);
-            bossroombackground.color = new Color(bossroombackground.color.r, bossroombackground.color.g, bossroombackground.color.b, Mathf.Lerp(0, 1, 0.5f));
+            bossroombackground.color = Color.Lerp(bossroombackground.color, colorA, 10 * Time.deltaTime);
         }
         else
         {
