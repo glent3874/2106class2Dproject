@@ -87,7 +87,7 @@ public class BaseEnemy : MonoBehaviour
     /// <summary>
     /// 等待計時器
     /// </summary>
-    private float timerIdle;
+    protected float timerIdle;
 
     /// <summary>
     /// 走路時間
@@ -294,7 +294,17 @@ public class BaseEnemy : MonoBehaviour
     protected virtual void AttackMethod()
     {
         timerAttack = 0;
-
+        Vector3 posTarget = attackTarget.position;      //目標座標
+        if (transform.position.x > posTarget.x && isFlipped)
+        {
+            transform.Rotate(0f, 180f, 0f);
+            isFlipped = false;
+        }
+        else if (transform.position.x < posTarget.x && !isFlipped)
+        {
+            transform.Rotate(0f, 180f, 0f);
+            isFlipped = true;
+        }
         ani.SetTrigger("攻擊");
     }
 

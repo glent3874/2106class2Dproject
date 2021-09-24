@@ -12,9 +12,11 @@ public class BossRoom : MonoBehaviour
     public float movespeed;
     public float zoomspeed;
 
-
     [Header("進入且位於Layer7的物件")]
     public Collider2D hit;
+
+    [Header("房間的主人")]
+    public GameObject bossName;
     #endregion
 
     #region 欄位:私人
@@ -60,6 +62,7 @@ public class BossRoom : MonoBehaviour
             lockcamera.position = Vector3.Lerp(Cam.transform.position, transform.position, movespeed * Time.deltaTime);
             Cam.orthographicSize = Mathf.Lerp(Cam.orthographicSize, 13, zoomspeed);
             bossroombackground.color = Color.Lerp(bossroombackground.color, colorA, 10 * Time.deltaTime);
+            bossName.GetComponent<BossEnemy>().PlayerEnterRoom = true;
         }
         else
         {
