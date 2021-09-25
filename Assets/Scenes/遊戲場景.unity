@@ -11485,8 +11485,8 @@ MonoBehaviour:
   deadAnimationTime: 2.7
   isFlipped: 0
   state: 0
-  checkAttackOffset: {x: 0, y: 6}
-  checkAttackSize: {x: 25, y: 17}
+  checkAttackOffset: {x: -1, y: 6}
+  checkAttackSize: {x: 20, y: 17}
   PlayerEnterRoom: 0
 --- !u!70 &714135128
 CapsuleCollider2D:
@@ -12157,7 +12157,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1026761716}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.22, y: -1.68, z: 0}
+  m_LocalPosition: {x: -1.27, y: -2.64, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1193103791}
@@ -12215,16 +12215,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 0
   jumpHeight: 700
+  RushDistance: 12
   HP: 3000
   attack: 1000
   onFloor: 0
   checkAttackOffset: {x: -2, y: 0}
   checkAttackSize: {x: 3, y: 2.5}
+  cd: 0.6
+  timer: 0
   groundOffset: {x: 0, y: -1.2, z: 0}
   groundRadius: 0.1
   gravity: 1
-  cd: 0.6
-  timer: 0
+  isRush: 0
+  rushtime: 0.5
 --- !u!1 &1035542655
 GameObject:
   m_ObjectHideFlags: 0
@@ -12576,7 +12579,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1178703012}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.47, y: -4.08, z: 0}
+  m_LocalPosition: {x: 11.85, y: -4.04, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -13144,8 +13147,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57a9c24ddf4399d44a82cb31ac2aedf2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  checkRoomOffset: {x: 0, y: 0}
-  checkRoomSize: {x: 44, y: 20}
+  checkRoomOffset: {x: 0.5, y: 0}
+  checkRoomSize: {x: 43, y: 20}
   movespeed: 3
   zoomspeed: 2
   hit: {fileID: 0}

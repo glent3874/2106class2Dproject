@@ -1,13 +1,16 @@
 using UnityEngine;
 using UnityEngine.UI;
+using System.Collections;
 
 public class player : MonoBehaviour
 {
     #region 欄位
     [Header("移動速度"), Range(0, 500)]
     public float moveSpeed;
-    [Header("跳躍高度"), Range(0, 10000)]
+    [Header("跳躍高度"), Range(0, 5000)]
     public int jumpHeight = 3000;
+    [Header("衝刺力道"), Range(0, 3000)]
+    public int RushDistance;
     [Header("血量"), Range(0, 20000)]
     public float HP = 100;
     [Header("攻擊力"), Range(0, 1000)]
@@ -26,14 +29,38 @@ public class player : MonoBehaviour
     [Header("攻擊區域的位移與大小")]
     public Vector2 checkAttackOffset;
     public Vector2 checkAttackSize;
-    #endregion
 
-    #region 事件
+    [Header("攻擊冷卻"), Range(0, 5)]
+    public float cd = 2;
+    /// <summary>
+    /// 攻擊計時器
+    /// </summary>
+    public float timer;
+    /// <summary>
+    /// 是否為攻擊
+    /// </summary>
+    private bool isAttack;
+
     private Text textHP;
     private Image imgHP;
 
     private float hpMax;
 
+    [Header("檢查地板區域: 位移與半徑")]
+    public Vector3 groundOffset;
+    [Range(0, 2)]
+    public float groundRadius = 0.5f;
+
+    [Header("重力"), Range(0.01f, 3)]
+    public float gravity = 3;
+
+    public bool isRush;
+    private float rushtimer;
+    [Header("衝刺冷卻"), Range(0, 2)]
+    public float rushtime;
+    #endregion
+
+    #region 事件
     private void Start()
     {
         rig = GetComponent<Rigidbody2D>();      //取得剛體
@@ -54,6 +81,7 @@ public class player : MonoBehaviour
         Turndirection();
         Jump();
         Attack();
+        Rush(hValue);
     }
 
     private void FixedUpdate()
@@ -61,16 +89,14 @@ public class player : MonoBehaviour
         Move(hValue * 5);
     }
 
-    [Header("檢查地板區域: 位移與半徑")]
-    public Vector3 groundOffset;
-    [Range(0, 2)]
-    public float groundRadius = 0.5f;
-
+    /// <summary>
+    /// 畫出攻擊範圍
+    /// </summary>
     private void OnDrawGizmos()
     {
         // 先決定顏色在繪製圖示
         Gizmos.color = new Color(1, 0, 0, 0.3f);    // 半透明紅色
-        Gizmos.DrawSphere(transform.position + groundOffset, groundRadius);   // 繪製球體(中心點, 半徑)
+        Gizmos.DrawSphere(transform.position + groundOffset, groundRadius);
 
         Gizmos.color = new Color(0.5f, 0.3f, 0.1f, 0.3f);
         Gizmos.DrawCube(
@@ -91,8 +117,6 @@ public class player : MonoBehaviour
         // 作用: 取得玩家按下水平按鍵的值, 按右為 1 , 按左為-1, 沒按為 0 
         hValue = Input.GetAxis("Horizontal");
     }
-    [Header("重力"), Range(0.01f, 3)]
-    public float gravity = 3;
 
     /// <summary>
     /// 移動
@@ -110,7 +134,7 @@ public class player : MonoBehaviour
         rig.MovePosition(posMove);
         */
 
-        /** 第二種移動方式: 使用專案內的重力 - 較緩慢 */
+        /* 第二種移動方式: 使用專案內的重力 - 較緩慢 */
         rig.velocity = new Vector2(horizontal + moveSpeed * Time.fixedDeltaTime, rig.velocity.y);
 
         // 控制走路動畫: 不等於0時勾選
@@ -158,16 +182,30 @@ public class player : MonoBehaviour
         }
     }
 
-    [Header("攻擊冷卻"), Range(0, 5)]
-    public float cd = 2;
-    /// <summary>
-    /// 攻擊計時器
-    /// </summary>
-    public float timer;
-    /// <summary>
-    /// 是否為攻擊
-    /// </summary>
-    private bool isAttack;
+    private void Rush(float horizontal)
+    {
+        if(onFloor && Input.GetKeyDown(KeyCode.C) && !isRush)
+        {
+            isRush = true;
+            ani.SetTrigger("突進");
+            transform.position = new Vector3( transform.position.x + horizontal * RushDistance,transform.position.y);
+        }
+
+        if(isRush)
+        {
+            if(rushtimer < rushtime)
+            {
+                rushtimer += Time.deltaTime;
+            }
+            else
+            {
+                rushtimer = 0;
+                isRush = false;
+            }
+        }
+    }
+
+    
 
     /// <summary>
     /// 攻擊
@@ -205,6 +243,7 @@ public class player : MonoBehaviour
             }
         }
     }
+
     /// <summary>
     /// 受傷
     /// </summary>
