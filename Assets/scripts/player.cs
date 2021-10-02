@@ -1,6 +1,5 @@
 using UnityEngine;
 using UnityEngine.UI;
-using System.Collections;
 
 public class player : MonoBehaviour
 {
@@ -9,8 +8,9 @@ public class player : MonoBehaviour
     public float moveSpeed;
     [Header("跳躍高度"), Range(0, 5000)]
     public int jumpHeight = 3000;
-    [Header("衝刺力道"), Range(0, 3000)]
+    [Header("衝刺距離"), Range(0, 15)]
     public int RushDistance;
+    private float rushdis;
     [Header("血量"), Range(0, 20000)]
     public float HP = 100;
     [Header("攻擊力"), Range(0, 1000)]
@@ -46,6 +46,8 @@ public class player : MonoBehaviour
 
     private float hpMax;
 
+    private Transform weapon;
+
     [Header("檢查地板區域: 位移與半徑")]
     public Vector3 groundOffset;
     [Range(0, 2)]
@@ -58,6 +60,9 @@ public class player : MonoBehaviour
     private float rushtimer;
     [Header("衝刺冷卻"), Range(0, 2)]
     public float rushtime;
+
+    [Header("水平物體偵測")]
+    public RaycastHit2D RaycastHit;
     #endregion
 
     #region 事件
@@ -71,6 +76,8 @@ public class player : MonoBehaviour
         textHP = GameObject.Find("血量").GetComponent<Text>();
         imgHP = GameObject.Find("血條").GetComponent<Image>();
 
+        weapon = GameObject.Find("斬擊輸出點").GetComponent<Transform>();
+
         textHP.text = "HP " + HP;
         imgHP.fillAmount = HP / hpMax;
     }
@@ -82,6 +89,7 @@ public class player : MonoBehaviour
         Jump();
         Attack();
         Rush(hValue);
+        walldetect();
     }
 
     private void FixedUpdate()
@@ -95,15 +103,18 @@ public class player : MonoBehaviour
     private void OnDrawGizmos()
     {
         // 先決定顏色在繪製圖示
-        Gizmos.color = new Color(1, 0, 0, 0.3f);    // 半透明紅色
+        Gizmos.color = new Color(1, 0, 0, 0.3f);    //偵測地板
         Gizmos.DrawSphere(transform.position + groundOffset, groundRadius);
 
-        Gizmos.color = new Color(0.5f, 0.3f, 0.1f, 0.3f);
+        Gizmos.color = new Color(0.5f, 0.3f, 0.1f, 0.3f);   //攻擊範圍
         Gizmos.DrawCube(
             transform.position +
             transform.right * checkAttackOffset.x +
             transform.up * checkAttackOffset.y,
             checkAttackSize);
+
+        Gizmos.color = new Color(0, 1, 0, 0.3f);    //衝刺距離
+        Gizmos.DrawRay(transform.position, -transform.right * RushDistance);
     }
     #endregion
 
@@ -146,12 +157,11 @@ public class player : MonoBehaviour
     /// </summary>
     private void Turndirection()
     {
-        // 如果玩家按D就將角度設定為(0,0,0)
         if (Input.GetKeyDown(KeyCode.RightArrow))
         {
             transform.eulerAngles = new Vector3(0, 180, 0);
         }
-        // 如果玩家按A就將角度設定為(0,180,0)
+
         if (Input.GetKeyDown(KeyCode.LeftArrow))
         {
             transform.eulerAngles = Vector3.zero;
@@ -184,16 +194,16 @@ public class player : MonoBehaviour
 
     private void Rush(float horizontal)
     {
-        if(onFloor && Input.GetKeyDown(KeyCode.C) && !isRush)
+        if (onFloor && Input.GetKeyDown(KeyCode.C) && !isRush)
         {
             isRush = true;
             ani.SetTrigger("突進");
-            transform.position = new Vector3( transform.position.x + horizontal * RushDistance,transform.position.y);
+            transform.position = new Vector3(transform.position.x + horizontal * rushdis, transform.position.y);
         }
 
-        if(isRush)
+        if (isRush)
         {
-            if(rushtimer < rushtime)
+            if (rushtimer < rushtime)
             {
                 rushtimer += Time.deltaTime;
             }
@@ -204,8 +214,6 @@ public class player : MonoBehaviour
             }
         }
     }
-
-    
 
     /// <summary>
     /// 攻擊
@@ -224,7 +232,7 @@ public class player : MonoBehaviour
             transform.up * checkAttackOffset.y,
             checkAttackSize, 0, 1 << 8);
 
-            if(hit)
+            if (hit)
             {
                 hit.GetComponent<BaseEnemy>().enemyHurt(attack);
             }
@@ -275,6 +283,24 @@ public class player : MonoBehaviour
     private void EatProp(string propName)
     {
 
+    }
+
+    private void walldetect()
+    {
+        RaycastHit = Physics2D.Raycast(this.gameObject.transform.position, -transform.right, RushDistance, 1 << 6);
+
+        if (RaycastHit.collider != null)
+        {
+            if (RaycastHit.distance <= RushDistance)
+            {
+                rushdis = RaycastHit.distance - 1;
+            }
+            
+        }
+        else
+        {
+            rushdis = RushDistance;
+        }
     }
 
     #endregion
