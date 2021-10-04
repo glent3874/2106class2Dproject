@@ -39,7 +39,7 @@ public class player : MonoBehaviour
     /// <summary>
     /// 是否為攻擊
     /// </summary>
-    private bool isAttack;
+    public bool isAttack;
 
     private Text textHP;
     private Image imgHP;
@@ -220,7 +220,7 @@ public class player : MonoBehaviour
     /// </summary>
     private void Attack()
     {
-        // 如果不是攻擊中 並且按下左鍵才可以攻擊 啟動觸發參數
+        // 如果不是攻擊中 並且按下X鍵才可以攻擊 啟動觸發參數
         if (!isAttack && Input.GetKeyDown(KeyCode.X))
         {
             isAttack = true;

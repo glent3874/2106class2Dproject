@@ -12225,6 +12225,7 @@ MonoBehaviour:
   checkAttackSize: {x: 3, y: 2.5}
   cd: 0.6
   timer: 0
+  isAttack: 0
   groundOffset: {x: 0, y: -1.2, z: 0}
   groundRadius: 0.1
   gravity: 1
@@ -12243,7 +12244,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   caster: {fileID: 1266594828}
-  slashPrefab: {fileID: 8266922817027561202, guid: 455fa9bb22cabda49a982f8616485de4, type: 3}
+  slashPrefab: {fileID: 2757614281864614120, guid: 455fa9bb22cabda49a982f8616485de4, type: 3}
+  cd: 0.6
+  timer: 0
+  isAttack: 0
 --- !u!1 &1035542655
 GameObject:
   m_ObjectHideFlags: 0
