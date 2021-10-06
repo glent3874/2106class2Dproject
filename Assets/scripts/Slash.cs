@@ -41,10 +41,14 @@ public class Slash : MonoBehaviour
         BaseEnemy enemy = hitInfo.GetComponent<BaseEnemy>();
         player damage = GameObject.Find("ª±®a").GetComponent<player>();
 
-        if(enemy != null)
+        if (enemy != null)
         {
             enemy.enemyHurt(damage.attack);
+            if (enemy.gameObject.layer == 8)
+            {
+                Destroy(gameObject);
+            }
         }
-        Destroy(gameObject);
+        
     }
 }
