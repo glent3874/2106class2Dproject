@@ -7,7 +7,7 @@ public class BaseEnemy : MonoBehaviour
     #region 欄位:公開
     [Header("基本能力")]
 
-    [Range(50, 5000)]
+    [Range(50, 10000)]
     public float hp = 100;
 
     [Range(5, 1000)]
@@ -142,6 +142,7 @@ public class BaseEnemy : MonoBehaviour
     {
         CheckForward();
         CheckState();
+        if (hp <= 0) state = StateEnemy.dead;
     }
 
     protected virtual void OnDrawGizmos()

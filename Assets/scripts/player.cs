@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Events;
 
 public class player : MonoBehaviour
 {
@@ -17,6 +18,8 @@ public class player : MonoBehaviour
     public float attack = 20;
     [Header("是否在地板上")]
     public bool onFloor = false;
+    [Header("死亡事件")]
+    public UnityEvent onDead;
 
     private AudioSource aud;                    //音效來源
     private Rigidbody2D rig;                    //剛體
@@ -273,6 +276,7 @@ public class player : MonoBehaviour
     {
         HP = 0;                             //血量歸零
         ani.SetBool("死亡", true);          //死亡動畫
+        onDead.Invoke();
         enabled = false;                    //關閉此腳本
     }
 

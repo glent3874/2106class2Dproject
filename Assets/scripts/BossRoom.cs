@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Events;
 
 public class BossRoom : MonoBehaviour
 {
@@ -17,12 +18,17 @@ public class BossRoom : MonoBehaviour
 
     [Header("房間的主人")]
     public GameObject bossName;
+
+    [Header("過關事件")]
+    public UnityEvent onPass;
     #endregion
 
     #region 欄位:私人
     private Transform lockcamera;
     private Camera Cam;
     private SpriteRenderer bossroombackground;
+
+    private bool bossdefeat = false;
     #endregion
 
     #region 事件
@@ -40,10 +46,12 @@ public class BossRoom : MonoBehaviour
         lockcamera = GameObject.Find("Main Camera").GetComponent<Transform>();
         bossroombackground = GameObject.Find("BossRoomBackground").GetComponent<SpriteRenderer>();
         Cam = Camera.main;
+        
     }
     private void Update()
     {
         CheckPlayerEnterRoom();
+        gameovercheck();
     }
     #endregion
 
@@ -69,6 +77,18 @@ public class BossRoom : MonoBehaviour
         {
             Cam.orthographicSize = Mathf.Lerp(Cam.orthographicSize, 7.5f, zoomspeed);
             bossroombackground.color = Color.Lerp(bossroombackground.color, colorB, 10 * Time.deltaTime);
+        }
+    }
+
+    private void gameovercheck()
+    {
+        if(!bossName)
+        {
+            if (bossdefeat == false)
+            {
+                bossdefeat = true;
+                onPass.Invoke();
+            }
         }
     }
     #endregion
