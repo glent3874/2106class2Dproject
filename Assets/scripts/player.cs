@@ -66,6 +66,7 @@ public class player : MonoBehaviour
 
     [Header("水平物體偵測")]
     public RaycastHit2D RaycastHit;
+
     #endregion
 
     #region 事件

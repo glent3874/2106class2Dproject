@@ -16,11 +16,22 @@ public class Weapon : MonoBehaviour
     /// </summary>
     public bool isAttack;
 
+    [Header("­µ®Ä°Ï°ì")]
+    public AudioClip soundAttack;
+
+    private AudioSource aud;
+
+    private void Start()
+    {
+        aud = GetComponent<AudioSource>();
+    }
+
     private void Update()
     {
 
         if (!isAttack && Input.GetKeyDown(KeyCode.X))
         {
+            aud.PlayOneShot(soundAttack, Random.Range(0.7f, 1.1f));
             isAttack = true;
             cast();
         }
